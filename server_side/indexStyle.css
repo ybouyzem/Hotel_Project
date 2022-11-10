@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+header {
+    background-color: beige;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sidebar {
+   content: url(images/menu.png);
+   width: 30px;
+   height: 30px;
+}
+#logo {
+    text-decoration: none;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+}
+.img {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.sign-in {
+    margin-right: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.sign-in a {
+    text-decoration: none;
+    color: midnightblue;
+    padding: 7px 15px 7px 15px;
+    font-size: large;
+}
+.sign-in a:hover {
+    border-radius: 25px;
+    background-color: white;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    width: 15%;
+    height: 87%;
+    border-right:1px gray solid ;
+   
+}
+.menu {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.menu a {
+    border-top:0.5px gray solid ;
+    border-bottom: 0.5px gray solid;
+    border-radius: 20px;
+    width: 75%;
+    height: 30px;
+    align-self: center;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    color: brown;
+    font-size: large;
+    transition: 0.5s;
+}
+.menu a:hover {
+    margin-left: 120px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    background-color: beige;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px ;
+    color: rgb(159, 12, 12);
+    font-size: larger;
+    transition: 0.7s;
+}
+.sign-up {
+    position: absolute;
+    bottom: 50px;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+}
+.sign-up a {
+    text-decoration: none;
+    color: midnightblue;
+    padding: 7px 15px 7px 15px;
+    font-size: large;
+}
+.sign-up a:hover {
+    border-radius: 25px;
+    background-color: white;
+}
+
