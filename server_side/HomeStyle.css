@@ -30,7 +30,7 @@ form{
     padding: 20px;
     padding-top: 30px;
     border-radius: 30px;
-    background-color: rgba(139, 139, 142, 0.567);
+    background-color: rgba(39, 36, 36, 0.77);
     box-shadow:-4px 4px 6px black;
 }
 form div {
@@ -38,30 +38,30 @@ form div {
 }
 .title {
     text-align: center;
-    color:beige;
+    color:rgb(247, 247, 202);
     font-size: x-large;
 }
 label {
     font-weight: 800;
-    color: rgb(0, 51, 56);
+    color:rgb(189, 189, 147);
 }
 input {
     margin-top: 8px;
     width: 300px;
     height: 35px;
     padding: 0px 10px 0px 10px;
-    background-color:rgba(255, 255, 255, 0.17);
+    background-color:rgba(255, 255, 255, 0.101);
     border: none;
     border-radius: 5px;
     border-bottom: 2px rgba(0, 0, 0, 0.725) solid;
-    color: black;
+    color: white;
     font-size: medium;
     font-weight: 500;
 }
 input:focus {
     outline: none;
-    background-color: rgba(255, 255, 255, 0.388);
-    border-bottom: 2px rgb(5, 108, 149) solid;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-bottom: 2px rgb(175, 175, 146) solid;
 }
 .button {
     display: flex;
@@ -78,5 +78,5 @@ button{
     border-radius: 20px;
 }
 button:hover {
-    border:2px rgb(255, 255, 255) solid;
+    border:2px rgb(196, 196, 174) solid;
 }
