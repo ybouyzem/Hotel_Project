@@ -1,0 +1,1014 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #252525;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+@font-face {
+    font-family: Brittany;
+    src: url(fonts/brittany_signature/BrittanySignature.ttf);
+}
+
+@font-face {
+    font-family: Cairo;
+    src: url(fonts/Cairo-VariableFont_wght.ttf);
+}
+
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 50px 0;
+    position: absolute;
+    z-index: 3;
+}
+
+header .head{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.head svg{
+    width: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.head span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.head span sup{
+    font-size: 0.7rem;
+    font-family: Brittany;
+}
+
+.head2{
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 0 20px 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.head2.open-menu{
+    left: 0px;
+    z-index: 2;
+}
+
+.head2 .hyperlien{
+    height: 500px;
+    width: 100%;
+    padding-left: 30%;
+    padding-top: 40%;
+}
+
+
+.head2 .registration ul,
+.head2 .hyperlien ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.head2 .registration ul li,
+.head2 .hyperlien ul li{
+    display: flex;
+    transition: .3s all;
+}
+
+.head2 .registration ul li svg,
+.head2 .hyperlien ul li svg{
+    width: 30px;
+    position: absolute;
+    /* z-index: 3; */
+    left: 40px;
+    /* cursor: pointer; */
+}
+
+.head2 .registration ul li button,
+.head2 .hyperlien ul li a{
+    color: #000;
+    font-size: 20px;
+    font-family: Brittany;
+    font-weight: bold;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-top: -5px;
+    transition: .3s;
+}
+
+.head2 .registration ul li button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+
+.head2 .registration ul li button:hover,
+.head2 .hyperlien ul li a:hover{
+    background-color: #000;
+    border-radius: 50px;
+    transform: translateX(10px);
+    color: #fff;
+}
+
+.head2 .hyperlien ul li  #icon,
+.head2 .registration ul li #icon{
+    transition: 1s;
+}
+
+.head2 .hyperlien ul li:hover  #icon,
+.head2 .registration ul li:hover  #icon{
+    stroke: #000;
+    transform: rotate(360deg);
+}
+
+
+.head2 .registration{
+    width: 100%;
+    height: 130px;
+    padding-left: 30%;
+    margin-bottom: 20px;
+}
+
+
+/* ********************************************************** */
+
+/* Form of Login and Sign Up */
+
+section{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.boxLogin,
+.boxSignIn{
+    position: absolute;
+    left: 33%;
+    top: 20%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 20px 150px;
+    visibility: hidden;
+    transform: scale(0.0001);
+    transition: .3s;
+}
+
+.boxLogin{
+    left: 35%;
+    top: 30%;
+}
+
+.boxLogin{
+    height: 450px;
+    width: 450px;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+
+.boxLogin-popup,
+.boxSignIn-popup{
+    visibility: visible;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.boxLogin form,
+.boxSignIn form{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxLogin .group-form,
+.boxSignIn .group-form{
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    text-align: center;
+    left: 5%;
+}
+
+.boxLogin .group-form{
+    width: 160%;
+    left: -60px;
+}
+
+.boxLogin .group-form:nth-child(1){
+    bottom: 2%;
+}
+
+.boxLogin .liens{
+    margin-bottom: 20px;
+}
+
+.boxLogin .group-form input,
+.boxSignIn .group-form input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1.5px solid black;
+    outline: none;
+    resize: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.boxLogin .group-form input{
+    margin-bottom: 2%;
+}
+
+
+.boxLogin .group-form:nth-child(2){
+    margin-bottom: 30px;
+}
+
+.boxLogin .group-form span,
+.boxSignIn .group-form span{
+    position: absolute;
+    left: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #666;
+    padding: 5px 0;
+    margin: 10px 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.boxLogin .group-form span{
+    margin: 13px 0;
+}
+
+.boxLogin .group-form input[type=email]:focus ~ span,
+.boxLogin .group-form input[type=email]:valid ~ span,
+.boxLogin .group-form input:focus ~ span,
+.boxLogin .group-form input:valid ~ span
+.boxSignIn .group-form input[type=email]:focus ~ span,
+.boxSignIn .group-form input[type=email]:valid ~ span,
+.boxSignIn .group-form input:focus ~ span,
+.boxSignIn .group-form input:valid ~ span{
+    color: #000;
+    font-size: 12px;
+    font-weight: lighter;
+    transform: translateY(-25px);
+}
+
+.boxLogin .group-form input[type=submit],
+.boxSignIn .group-form input[type=submit]{
+    width: 80%;
+    padding: 15px;
+    margin-left: 50px;
+    background-color: #000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 150px;
+    transition: .3s;
+}
+
+.boxLogin .group-form input[type=submit]{
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: -8px;
+}
+
+.boxLogin .group-form input[type=submit]:hover,
+.boxSignIn .group-form input[type=submit]:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+}
+
+.Name{
+    display: flex;
+    gap: 20px;
+    width: 90%;
+}
+
+.liens a{
+    display: inline;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.headForm{
+    width: 100%;
+}
+
+.boxSignIn .headForm{
+    margin-top: 20px;
+}
+
+.headForm li{
+    display: flex;
+}
+
+.boxSignIn .headForm span,
+.boxLogin .headForm span{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Brittany;
+    position: relative;
+}
+
+.boxLogin .headForm span{
+    left: 25%;
+}
+
+.boxSignIn .headForm span{
+    left: 25%;
+}
+
+.boxLogin .icon,
+.boxSignIn .icon{
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.boxLogin .icon{
+    margin-left: 25px;
+}
+
+.boxSignIn .icon{
+    margin-left: 40px;
+}
+
+.liens{
+    width: 160%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxLogin .liens{
+    margin-left: -60px;
+}
+
+.boxSignIn .liens{
+    margin-left: 22px;
+    margin-top: 5px;
+}
+
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Contact browser */
+
+.contact{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    height: 90vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+/* the line between contact form & contact elements */
+
+.contact .line{
+    width: 2px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30%;
+}
+
+/* the form of the contact */
+
+.contact .ContactForm{
+    width: 600px;
+    height: 400px;
+}
+
+.ContactForm form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.ContactForm h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.ContactForm .box{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding: 0 8%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ContactForm .group-form{
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: 0%;
+}
+
+.ContactForm .group-form textarea,
+.ContactForm .group-form input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    resize: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.ContactForm .group-form textarea{
+    width: 85%;
+}
+
+.ContactForm .group-form:nth-child(3) span{
+    margin-left: 45px;
+}
+
+.ContactForm .group-form span{
+    position: absolute;
+    left: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    padding: 5px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.ContactForm .group-form input[type=email]:focus ~ span,
+.ContactForm .group-form input[type=email]:valid ~ span,
+.ContactForm .group-form textarea:focus ~ span,
+.ContactForm .group-form textarea:valid ~ span,
+.ContactForm .group-form input:focus ~ span,
+.ContactForm .group-form input:valid ~ span{
+    color: #fff;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.ContactForm .group-form input[type=submit]{
+    width: 85%;
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+.ContactForm .group-form input[type=submit]:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+
+/* the elements of the contact */
+
+.contact .ContactElements{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.contact .ContactElements.off,
+.ContactElements h1.off,
+.BoxElementContainer .BoxElement .BoxElementTitle svg.off,
+.BoxElementContainer .BoxElement .BoxElementTitle span.off,
+.BoxElementContainer .BoxElement  a.off{
+    transform: scale(0.0001);
+    visibility: hidden;
+}
+
+.BoxElementContainer{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.ContactElements h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #000;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.BoxElementContainer .BoxElement .BoxElementTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+
+.BoxElementContainer .BoxElement .BoxElementTitle svg{
+    width: 2rem;
+    padding-bottom: 23px;
+    margin-right: 10px;
+}
+
+.BoxElementContainer .BoxElement .BoxElementTitle span{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.BoxElementContainer .BoxElement a{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: #000;
+    transition: .3s;
+}
+
+.BoxElementContainer .BoxElement a:hover{
+    color: lightblue;
+}
+
+.BoxElementContainer .BoxElement .icon{
+    width: 2rem;
+    cursor: pointer;
+}
+
+/* ***************************************** */
+
+.contact2{
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    padding-left: 2%;
+    padding-right: 15%;
+}
+
+.contact2 #map{
+    width: 40%;
+}
+
+/* Social media  */
+
+.contact2 .media{
+    width: 40%;
+    height: 25rem;
+}
+
+.media h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.media .mediaContainer{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mediaContainer .mediaBox a{
+    display: flex;
+    transition: .3s;
+}
+
+.mediaContainer .mediaBox a svg{
+    margin-left: 20px;
+    padding-bottom: 20px;
+    stroke: #fff;
+}
+
+.mediaContainer .mediaBox a{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mediaContainer .mediaBox a:hover{
+    color: lightblue;
+    stroke: lightblue;
+}
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* About browser */
+
+.AboutUs{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Title of About Browser */
+.AboutTitle{
+    width: 30%;
+    height: 90%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.AboutTitle .Title{
+    font-size: 5.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    transform: rotate(-90deg);
+}
+
+.AboutTitle .Contact a{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+}
+
+
+/* Container of About Browser */
+.AboutContent{
+    width: 50%;
+    height: 90%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AboutContent .ContentTitle span{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+
+.AboutContent .ContentTitle span sup{
+    font-family: Brittany;
+    font-size: 0.8rem;
+    letter-spacing: 0;
+}
+
+.AboutContent .ContentParagraphs p{
+    color: #fff;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Indie Flower', cursive;
+    padding: 1rem 0;
+}
+
+.AboutContent .ContentMedia{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.AboutContent .ContentMedia a svg{
+    transition: .3s;
+}
+
+.AboutContent .ContentMedia a svg:hover{
+    transform: scale(1.2);
+    stroke: #fff;
+}
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Hosting browser */
+
+
+.HostingPage{
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+}
+
+.HostingPage .Box{
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+}
+
+/* Partie d'image */
+.Box .Image{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box .Image img{
+    width: 80%;
+    transition: .3s;
+}
+
+.Box .Image img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.Box .Image #spa{
+    width: 50%;
+}
+
+.Box .Image #piscine{
+    width: 55%;
+}
+
+.Box .Image #kitchen{
+    width: 90%;
+}
+
+/* Partie de description */
+.Box .Desc{
+    width: 50%;
+    height: 100%;
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.Box .Desc .DescFils{
+    width: 100%;
+    height: 130%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+    padding: 10vh 0;
+}
+
+.Box .Desc span{
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.Box .Desc p{
+    text-align: center;
+    line-height: 1.5rem;
+    font-family: 'Indie Flower', cursive;
+    margin: 2% 0;
+    padding: 0 5%;
+    color: #000;
+}
+
+.Box .Desc a{
+    font-family: Cairo;
+    font-size: 1rem;
+    color: #252525;
+    text-decoration: underline;
+}
+
+.HostingPage .Box:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Home browser */
+
+.HomePage{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.HomePage .HomePageDesc{
+    position: relative;
+    width: 55%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.HomePage .HomePageDesc:before{
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    background-image: url('images/bg1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+}
+
+/* Partie d'accueilir */
+
+.HomePage .HomePageDesc .Welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomePage .HomePageDesc .Welcome span{
+    position: relative;
+    font-size: 6rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.HomePage .HomePageDesc .Welcome span sup{
+    font-family: Brittany;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.HomePage .HomePageDesc .Welcome p{
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #cfcecc;
+    font-family: Cairo;
+    padding: 0 4%;
+}
+
+/* Partie des buttons */
+
+.HomePage .HomePageDesc .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.HomePage .HomePageDesc .buttons .box{
+    transition: .3s;
+}
+
+.HomePage .HomePageDesc .buttons .box:hover{
+    transform: scale(1.1);
+}
+
+.HomePage .HomePageDesc .buttons .box a{
+    position: relative;
+    font-family: Cairo;
+    font-size: 1.2rem;
+    color: #fff;
+    z-index: 1;
+    border: 1px solid #252525;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.HomePage .HomePageDesc .buttons .box #hostingButton,
+.HomePage .HomePageDesc .buttons .box #bookingButton{
+    background-color: #723824;
+}
+
+.HomePage .HomePageDesc .buttons .box #hostingButton:hover,
+.HomePage .HomePageDesc .buttons .box #bookingButton:hover{
+    background-color: transparent;
+    color: #000000;
+    
+}
