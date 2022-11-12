@@ -35,6 +35,7 @@ html{
     src: url(fonts/Cairo-VariableFont_wght.ttf);
 }
 
+/* The first Header */
 
 header{
     height: 10vh;
@@ -43,25 +44,32 @@ header{
     border-radius: 0 0 50px 0;
     position: absolute;
     z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
 }
 
 header .head{
     height: 100%;
-    width: 300px;
+    width: 20%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+header nav span{
+    font-family: Cairo;
+    font-size: 1.2rem;
 }
 
 .head svg{
     width: 40px;
-    margin-left: 10px;
     cursor: pointer;
-    align-self: center;
 }
 
 .head span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    align-self: center;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
@@ -72,6 +80,8 @@ header .head{
     font-size: 0.7rem;
     font-family: Brittany;
 }
+
+/* The second header */
 
 .head2{
     position: absolute;
@@ -951,7 +961,7 @@ section{
     font-size: 6rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color: #fff;
+    color: #cdd9e4 !important;
     z-index: 1;
     text-transform: uppercase;
 }
@@ -959,7 +969,7 @@ section{
 .HomePage .HomePageDesc .Welcome span sup{
     font-family: Brittany;
     font-size: 1rem;
-    color: #fff;
+    color: #cdd9e4 !important;
 }
 
 .HomePage .HomePageDesc .Welcome p{
@@ -968,7 +978,7 @@ section{
     z-index: 1;
     font-size: 1.4rem;
     font-weight: bolder;
-    color: #cfcecc;
+    color: #fff;
     font-family: Cairo;
     padding: 0 4%;
 }
@@ -993,9 +1003,9 @@ section{
     position: relative;
     font-family: Cairo;
     font-size: 1.2rem;
-    color: #fff;
+    color: #ffffff;
     z-index: 1;
-    border: 1px solid #252525;
+    border: 1px solid #fff;
     padding: 0.5rem 2rem;
     border-radius: 50px;
     transition: .3s;
@@ -1003,12 +1013,11 @@ section{
 
 .HomePage .HomePageDesc .buttons .box #hostingButton,
 .HomePage .HomePageDesc .buttons .box #bookingButton{
-    background-color: #723824;
+    background-color: rgba(255, 255, 255, 0.16) !important;
 }
 
 .HomePage .HomePageDesc .buttons .box #hostingButton:hover,
 .HomePage .HomePageDesc .buttons .box #bookingButton:hover{
     background-color: transparent;
-    color: #000000;
-    
 }
+
