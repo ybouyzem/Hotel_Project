@@ -35,6 +35,11 @@ html{
     src: url(fonts/Cairo-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Disney;
+    src: url(fonts/NewWaltDisneyUi-8YdA.ttf);
+}
+
 /* The first Header */
 
 header{
@@ -47,7 +52,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
+    padding-left: 2%;
+    padding-right: 4%;
 }
 
 header .head{
@@ -69,8 +75,8 @@ header nav span{
 }
 
 .head span{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
+    font-family: Disney;
+    font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
@@ -126,6 +132,10 @@ header nav span{
     transition: .3s all;
 }
 
+.head2 .hyperlien ul li .active{
+    stroke: brown;
+}
+
 .head2 .registration ul li svg,
 .head2 .hyperlien ul li svg{
     width: 30px;
@@ -139,8 +149,7 @@ header nav span{
 .head2 .hyperlien ul li a{
     color: #000;
     font-size: 20px;
-    font-family: Brittany;
-    font-weight: bold;
+    font-family: Cairo;
     padding-right: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -164,14 +173,13 @@ header nav span{
     color: #fff;
 }
 
-.head2 .hyperlien ul li  #icon,
-.head2 .registration ul li #icon{
+.head2 .hyperlien ul li .icon,
+.head2 .registration ul li .icon{
     transition: 1s;
 }
 
-.head2 .hyperlien ul li:hover  #icon,
-.head2 .registration ul li:hover  #icon{
-    stroke: #000;
+.head2 .hyperlien ul li:hover .icon,
+.head2 .registration ul li:hover .icon{
     transform: rotate(360deg);
 }
 
@@ -759,17 +767,11 @@ section{
 
 .AboutContent .ContentTitle span{
     font-size: 3rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Disney;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.5rem;
     font-weight: bold;
-}
-
-.AboutContent .ContentTitle span sup{
-    font-family: Brittany;
-    font-size: 0.8rem;
-    letter-spacing: 0;
 }
 
 .AboutContent .ContentParagraphs p{
@@ -926,7 +928,7 @@ section{
     height: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
@@ -959,27 +961,20 @@ section{
 .HomePage .HomePageDesc .Welcome span{
     position: relative;
     font-size: 6rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Disney;
     font-weight: bold;
-    color: #cdd9e4 !important;
+    color: #fff !important;
     z-index: 1;
     text-transform: uppercase;
-}
-
-.HomePage .HomePageDesc .Welcome span sup{
-    font-family: Brittany;
-    font-size: 1rem;
-    color: #cdd9e4 !important;
 }
 
 .HomePage .HomePageDesc .Welcome p{
     position: relative;
     text-align: center;
     z-index: 1;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    color: #fff;
+    font-size: 1.2rem;
     font-family: Cairo;
+    color: #fff;
     padding: 0 4%;
 }
 
@@ -989,6 +984,7 @@ section{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    padding-top: 3rem;
 }
 
 .HomePage .HomePageDesc .buttons .box{
@@ -1021,3 +1017,120 @@ section{
     background-color: transparent;
 }
 
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Calling Service browser */
+
+.SupportPage{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The background */
+
+.SupportPage .background{
+    width: 100%;
+    height: 50%;
+    background-image: url("images/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SupportPage .background .Title{
+    padding: 1rem;
+}
+
+.SupportPage .background .Title span{
+    font-size: 3rem;
+    font-family: Cairo;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 5));
+}
+
+.SupportPage .background .Description p{
+    color: #ffffff;
+    font-size: 1rem; 
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 5));
+}
+
+/* The two boxes */
+
+.SupportPage .Infos{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4%;
+    background-color: #fff;
+}
+
+.SupportPage .Infos .box{
+    width: 30%;
+    height: 95%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.SupportPage .Infos .box div{
+    padding: 0.5rem;
+}
+
+.SupportPage .Infos .box .Title span{
+    font-family: 1.5rem;
+    font-family: Cairo;
+    font-weight: bold;
+}   
+
+.SupportPage .Infos .box .desc p{
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}   
+
+.SupportPage .Infos .box .link{
+    padding-top: 2.5rem;
+}
+
+.SupportPage .Infos .box .link #num{
+    font-family: 'Courier New', Courier, monospace;
+    color: #252525;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.SupportPage .Infos .box .link #num:hover{
+    color: lightblue;
+}
+
+.SupportPage .Infos .box .link #link{
+    color: #fff;
+    padding: 1rem 1.8rem;
+    border: 1px solid #000;
+    background-color: #000;
+    transition: .3s;
+}
+
+.SupportPage .Infos .box .link #link:hover{
+    color: #000;
+    background-color: #fff;
+}
