@@ -52,8 +52,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2%;
-    padding-right: 4%;
+    padding: 0 2%;
 }
 
 header .head{
@@ -64,10 +63,53 @@ header .head{
     align-items: center;
 }
 
+/* the languages */
+
+header nav{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav .lang{
+    background-color: #000;
+    border: 1px solid #000;
+    transition: .3s;
+}
+
+header nav .lang:hover{
+    background-color: #fff;
+}
+
+header nav .lang:hover a.active{
+    color: #000;
+}
+
+
+header nav .lang a{
+    font-family: Cairo;
+    padding: 0.7rem;
+    color: #ccc;
+    transition: .3s;
+}
+
+header nav .lang a.active{
+    color: #fff;
+}
+
 header nav span{
     font-family: Cairo;
     font-size: 1.2rem;
 }
+
+/* icon clock */
+
+header nav div svg{
+    width: 2rem;
+}
+
+/* *********************** */
 
 .head svg{
     width: 40px;
