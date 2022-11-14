@@ -133,7 +133,7 @@ header nav span{
 }
 
 .head2 .hyperlien ul li .active{
-    stroke: brown;
+    stroke: #000;
 }
 
 .head2 .registration ul li svg,
@@ -143,6 +143,7 @@ header nav span{
     /* z-index: 3; */
     left: 40px;
     /* cursor: pointer; */
+    stroke: #555;
 }
 
 .head2 .registration ul li button,
@@ -159,7 +160,7 @@ header nav span{
 }
 
 .head2 .registration ul li button{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
