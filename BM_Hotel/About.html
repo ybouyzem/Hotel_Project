@@ -7,22 +7,30 @@
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marhey&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <div class="head">
                 <svg id="bar" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="14" y2="12" />
-                    <line x1="4" y1="18" x2="18" y2="18" />
-                  </svg>
-                  <span>Hotel</span>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="14" y2="12" />
+                <line x1="4" y1="18" x2="18" y2="18" />
+                </svg>
+                <span>Hotel</span>
             </div>
             <nav>
+                <div class="lang">
+                    <a href="#" language="english" class="active">EN</a>
+                    <a href="#" language="french">FR</a>
+                    <a href="#" language="arabic">AR</a>
+                </div>
                 <span><script type="text/javascript">
                     var date = new Date();
                     var day = date.getDate();
@@ -30,6 +38,17 @@
                     var year = date.getFullYear();
                     document.write(month + " / " + day + " / " + year);
                   </script> </span>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="5" width="16" height="16" rx="2" />
+                        <line x1="16" y1="3" x2="16" y2="7" />
+                        <line x1="8" y1="3" x2="8" y2="7" />
+                        <line x1="4" y1="11" x2="20" y2="11" />
+                        <line x1="11" y1="15" x2="12" y2="15" />
+                        <line x1="12" y1="15" x2="12" y2="18" />
+                      </svg>
+                  </div>
             </nav>
         </header>
         <div class="head2" id="head2">
@@ -177,21 +196,21 @@
         <div class="AboutUs">
             <div class="AboutTitle">
                 <div class="Title">
-                    <span>About Us</span>
+                    <span class="BigTitle">About Us</span>
                 </div>
                 <div class="Contact">
-                    <a href="Contact.html">Contact Us</a>
+                    <a href="Contact.html" class="ToContactPage">Contact Us</a>
                 </div>
             </div>
             <div class="AboutContent">
                 <div class="ContentTitle">
-                    <span>Hotel</span>
+                    <span class="SmallTitle">Hotel</span>
                 </div>
                 <div class="ContentParagraphs">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat ad dolore deleniti, in doloribus sequi? Repellendus debitis culpa deleniti, libero natus quas, beatae quos qui accusantium consequatur quibusdam? Obcaecati?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque illum deserunt voluptatibus autem. Quod ducimus mollitia corrupti nisi atque architecto voluptas fugit, ipsa nulla autem beatae quo voluptate suscipit cum soluta accusamus officia error? Minus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit repudiandae harum laboriosam earum reprehenderit sequi temporibus facilis iure sint.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque illum deserunt voluptatibus autem. Quod ducimus mollitia corrupti nisi atque architecto voluptas fugit, ipsa nulla autem beatae quo voluptate suscipit cum soluta accusamus officia error? Minus.</p>
+                    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat ad dolore deleniti, in doloribus sequi? Repellendus debitis culpa deleniti, libero natus quas, beatae quos qui accusantium consequatur quibusdam? Obcaecati?</p>
+                    <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque illum deserunt voluptatibus autem. Quod ducimus mollitia corrupti nisi atque architecto voluptas fugit, ipsa nulla autem beatae quo voluptate suscipit cum soluta accusamus officia error? Minus.</p>
+                    <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit repudiandae harum laboriosam earum reprehenderit sequi temporibus facilis iure sint.</p>
+                    <p class="para4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque illum deserunt voluptatibus autem. Quod ducimus mollitia corrupti nisi atque architecto voluptas fugit, ipsa nulla autem beatae quo voluptate suscipit cum soluta accusamus officia error? Minus.</p>
                 </div>
                 <div class="ContentMedia">
                     <div class="Media-box">
@@ -235,5 +254,6 @@
 
         <script src="pop-up.js"></script>
         <script src="show_menu_up.js"></script>
+        <script src="langAbout.js"></script>
     </body>
 </html>

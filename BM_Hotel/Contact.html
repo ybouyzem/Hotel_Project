@@ -12,14 +12,19 @@
         <header>
             <div class="head">
                 <svg id="bar" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="14" y2="12" />
-                    <line x1="4" y1="18" x2="18" y2="18" />
-                  </svg>
-                  <span>Hotel</span>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="14" y2="12" />
+                <line x1="4" y1="18" x2="18" y2="18" />
+                </svg>
+                <span>Hotel</span>
             </div>
             <nav>
+                <div class="lang">
+                    <a href="#" language="english" class="active" id="EN">EN</a>
+                    <a href="#" language="french" id="FR">FR</a>
+                    <a href="#" language="arabic" id="AR">AR</a>
+                </div>
                 <span><script type="text/javascript">
                     var date = new Date();
                     var day = date.getDate();
@@ -27,6 +32,17 @@
                     var year = date.getFullYear();
                     document.write(month + " / " + day + " / " + year);
                   </script> </span>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="5" width="16" height="16" rx="2" />
+                        <line x1="16" y1="3" x2="16" y2="7" />
+                        <line x1="8" y1="3" x2="8" y2="7" />
+                        <line x1="4" y1="11" x2="20" y2="11" />
+                        <line x1="11" y1="15" x2="12" y2="15" />
+                        <line x1="12" y1="15" x2="12" y2="18" />
+                      </svg>
+                  </div>
             </nav>
         </header>
         <div class="head2" id="head2">
@@ -174,7 +190,7 @@
 
         <div class="contact">
             <div class="ContactElements" id="ContactElements">
-                <h1>Conatct Us</h1>
+                <h1 class="BigTitle">Contact Us</h1>
                 <div class="BoxElementContainer">
                     <div class="BoxElement">
                         <div class="BoxElementTitle">
@@ -184,7 +200,7 @@
                                 <line x1="15" y1="9" x2="20" y2="4" />
                                 <polyline points="16 4 20 4 20 8" />
                               </svg>
-                            <span>Call us</span>
+                            <span class="miniTitle1">Call us</span>
                         </div>
                         <div>
                             <a href="tel:+212 620-429392">+212 620-429392</a>
@@ -200,7 +216,7 @@
                                 <rect x="3" y="5" width="18" height="14" rx="2" />
                                 <polyline points="3 7 12 13 21 7" />
                               </svg>
-                            <span>Email</span>
+                            <span class="miniTitle2">Email</span>
                         </div>
                         <a href="mailto:HotelBM@gmail.com">HotelBM@gmail.com</a>
                     </div>
@@ -211,7 +227,7 @@
                                 <circle cx="12" cy="11" r="3" />
                                 <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                             </svg>
-                            <span>Location</span>
+                            <span class="miniTitle3">Location</span>
                         </div>
                         <a href="#map">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -226,23 +242,23 @@
             <div class="line"></div>
             <div class="ContactForm">
                 <form action="" method="post">
-                    <h1>Get in touch</h1>
+                    <h1 class="FormTitle">Get in touch</h1>
                     <div class="box">
                         <div class="group-form">
                             <input type="text" name="" id="" required>
-                            <span>Full Name</span>
+                            <span class="FormFullName">Full Name</span>
                         </div>
                         <div class="group-form">
                             <input type="email" name="" id="" required>
-                            <span>E-mail</span>
+                            <span class="FormEmail">E-mail</span>
                         </div>
                     </div>
                     <div class="group-form">
                         <textarea name="" id="" cols="30" rows="1" required></textarea>
-                        <span>Type your message here...</span>
+                        <span class="FormMessage">Type your message here...</span>
                     </div>
                     <div class="group-form">
-                        <input type="submit" name="" id="" value="Send">
+                        <input type="submit" name="" id="submit" value="Send">
                     </div>
                 </form>
             </div>
@@ -253,10 +269,10 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53940.65427401012!2d-6.408248617972794!3d32.33089946372125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda38649419c7fc1%3A0x6236b3e9a12bafd9!2sBeni-Mellal!5e0!3m2!1sen!2sma!4v1666372040088!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="media">
-                <h1>Visit Us Here</h1>
+                <h1 class="MediaTitle">Visit Us Here</h1>
                 <div class="mediaContainer">
                     <div class="mediaBox">
-                        <a href="">Instagram<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <a href=""><span class="MediaWebInstagram">Instagram</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M18 15l3 -3l-3 -3" />
                             <path d="M3 12h18" />
@@ -264,7 +280,7 @@
                           </svg></a>
                     </div>
                     <div class="mediaBox">
-                        <a href="">Facebook<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <a href=""><span class="MediaWebFacebook">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M18 15l3 -3l-3 -3" />
                             <path d="M3 12h18" />
@@ -272,7 +288,7 @@
                           </svg></a>
                     </div>
                     <div class="mediaBox">
-                        <a href="">Youtube<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <a href=""><span class="MediaWebYoutube">Youtube</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M18 15l3 -3l-3 -3" />
                             <path d="M3 12h18" />
@@ -280,7 +296,7 @@
                           </svg></a>
                     </div>
                     <div class="mediaBox">
-                        <a href="">Linked in<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <a href=""><span class="MediaWebLinkedIn">Linked in</span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right-bar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M18 15l3 -3l-3 -3" />
                             <path d="M3 12h18" />
@@ -293,5 +309,6 @@
 
         <script src="pop-up.js"></script>
         <script src="show_menu_up.js"></script>
+        <script src="langContact.js"></script>
     </body>
 </html>

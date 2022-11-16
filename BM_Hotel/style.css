@@ -376,7 +376,7 @@ section{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 19px;
-    border: none;
+    border: 1px solid #000;
     cursor: pointer;
     border-radius: 0 150px;
     transition: .3s;
@@ -390,7 +390,7 @@ section{
 
 .boxLogin .group-form input[type=submit]:hover,
 .boxSignIn .group-form input[type=submit]:hover{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     color: #000;
 }
 
@@ -589,14 +589,14 @@ section{
     color: #000;
     font-family: 'Courier New', Courier, monospace;
     font-size: 19px;
-    border: none;
+    border: 1px solid #fff;
     cursor: pointer;
     margin-top: 30px;
     transition: .3s;
 }
 
 .ContactForm .group-form input[type=submit]:hover{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     color: #fff;
 }
 
@@ -729,7 +729,6 @@ section{
 
 .mediaContainer .mediaBox a{
     display: flex;
-    transition: .3s;
 }
 
 .mediaContainer .mediaBox a svg{
@@ -738,14 +737,13 @@ section{
     stroke: #fff;
 }
 
-.mediaContainer .mediaBox a{
+.mediaContainer .mediaBox a span{
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.mediaContainer .mediaBox a:hover{
+.mediaContainer .mediaBox a span:hover{
     color: lightblue;
-    stroke: lightblue;
 }
 
 
@@ -779,11 +777,15 @@ section{
 }
 
 .AboutTitle .Title{
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+.AboutTitle .Title span{
     font-size: 5.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #000;
-    transform: rotate(-90deg);
 }
 
 .AboutTitle .Contact a{
@@ -810,10 +812,9 @@ section{
 
 .AboutContent .ContentTitle span{
     font-size: 3rem;
-    font-family: Disney;
+    font-family: Disney, 'Marhey',Cairo, cursive;
     text-transform: uppercase;
     color: #fff;
-    letter-spacing: 0.5rem;
     font-weight: bold;
 }
 
@@ -822,7 +823,7 @@ section{
     line-height: 1.5rem;
     text-align: center;
     font-size: 1.2rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower',Cairo, cursive;
     padding: 1rem 0;
 }
 
@@ -1004,7 +1005,7 @@ section{
 .HomePage .HomePageDesc .Welcome span{
     position: relative;
     font-size: 6rem;
-    font-family: Disney;
+    font-family: Disney, 'Marhey', cursive;
     font-weight: bold;
     color: #fff !important;
     z-index: 1;
@@ -1177,3 +1178,13 @@ section{
     color: #000;
     background-color: #fff;
 }
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Booking browser */
+
+
+/* Type your code below */
