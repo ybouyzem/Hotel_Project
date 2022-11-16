@@ -46,13 +46,16 @@ header{
     height: 10vh;
     width: 100%;
     background-color: #fff;
-    border-radius: 0 0 50px 0;
+    /* border-radius: 0 0 50px 0;  i remove this 'Younes'*/
     position: absolute;
     z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2%;
+    /* added by younes */
+    position: fixed;
+    box-shadow:2.5px 1.5px 6px #555;
 }
 
 header .head{
@@ -242,7 +245,7 @@ header nav div svg{
 section{
     width: 100%;
     height: 80vh;
-    position: relative;
+    position:relative;
 }
 
 .boxLogin,
@@ -1176,4 +1179,96 @@ section{
 .SupportPage .Infos .box .link #link:hover{
     color: #000;
     background-color: #fff;
+}
+/* booking page */
+.booking-background {
+    height: 700px;
+    width: 100%;
+    background-image: url(../BM_Hotel/images/bg1.jpg);
+    background-size: cover;
+    background-position: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.header-section {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+}
+.header-section h1 {
+    font-family: 'lato';
+    color:white;
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+}
+.header-section h2 {
+    font-family: 'lato';
+    color: white;
+    font-size: 1.8rem;
+}
+.container {
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    margin: 350px 0px 0px 165px  ;
+}
+.container .box1 , .box2 ,.box3 {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background-color:azure;
+    float:left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container .box1:hover , .box2:hover ,.box3:hover{
+    transition: 0.5s;
+    box-shadow:5px 6px 6px #252525;
+
+}
+.container .box1 a img, .box2 a img, .box3 a img {
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container .box1:hover .room ,.box2:hover .activities, .box3:hover .events {
+    position: relative;
+    margin: 20px 0px 0px calc(50% - 40px) ;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container .box1:hover .title-box,.box2:hover .title-box ,.box3:hover .title-box{
+    transition: 0.3s;
+    opacity: 0;
+}
+.title-box {
+    position: absolute;
+    font-family: 'lato';
+    font-size: x-large;
+    font-weight: bolder;
+    top: 40%;
+    left: 31%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(40, 38, 38, 0.581);
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    transition: 0.5;
+}
+.container .box1 div h1,.box2 div h1,.box3 div h1{
+    font-family: 'Coca Cola ii';
+    text-align: center;
+    color: brown;
 }
