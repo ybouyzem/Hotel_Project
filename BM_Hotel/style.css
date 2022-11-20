@@ -939,15 +939,17 @@ footer.AboutFooter{
 
 .Box .Desc span{
     font-size: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cairo;
     color: #000;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .Box .Desc p{
+    font-size: 1rem;
     text-align: center;
     line-height: 1.5rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: Cairo;
     margin: 2% 0;
     padding: 0 5%;
     color: #000;
@@ -955,7 +957,7 @@ footer.AboutFooter{
 
 .Box .Desc a{
     font-family: Cairo;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #252525;
     text-decoration: underline;
 }
@@ -1168,6 +1170,7 @@ footer.AboutFooter{
     font-size: 1.5rem;
     font-weight: bold;
     color: #252525;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .HomeMain .HotelDesc .box .HotelDescLigne{
@@ -1185,7 +1188,7 @@ footer.AboutFooter{
 .HomeMain .HotelDesc .box .HotelDescValue svg{
     width: 1.5rem;
     margin-bottom: -1rem;
-    stroke: #252525;
+    stroke: goldenrod;
 }
 
 .HomeMain .HotelDesc .box .HotelDescTitle{
@@ -1197,6 +1200,7 @@ footer.AboutFooter{
     font-size: 1.5rem;
     font-weight: bold;
     color: #252525;
+    font-family: Cairo;
 }
 
 /* Services of the hotel */
@@ -1333,6 +1337,18 @@ footer.AboutFooter{
 .HomeMain .toTourism .locations .item .itemBG:hover{
     height: 60%;
 }
+
+.HomeMain .toTourism .locations .item .itemDesc .itemDescTitle,
+.HomeMain .toTourism .locations .item .itemDesc .itemDescLien,
+.HomeMain .toTourism .locations .item .itemDesc .itemDescParagraph{
+    transition: .3s;
+} 
+
+.HomeMain .toTourism .locations .item .itemBG:hover+.itemDesc .itemDescTitle,
+.HomeMain .toTourism .locations .item .itemBG:hover+.itemDesc .itemDescLien,
+.HomeMain .toTourism .locations .item .itemBG:hover+.itemDesc .itemDescParagraph{
+    padding: 0;
+} 
 /* ************* setting backgrounds ************** */
 
 .HomeMain .toTourism .locations .item1 .itemBG{
@@ -1534,6 +1550,7 @@ footer .FooterLogo span{
     color: #ffffff;
     font-size: 1rem; 
     filter: drop-shadow(0 0 16px rgba(0, 0, 0, 5));
+    font-family: Cairo;
 }
 
 
@@ -1576,6 +1593,7 @@ footer .FooterLogo span{
     text-align: center;
     font-size: .9rem;
     line-height: 1.2rem;
+    font-family: Cairo;
 }   
 
 .SupportPage .Infos .box .link{
@@ -1595,6 +1613,7 @@ footer .FooterLogo span{
 
 .SupportPage .Infos .box .link #link{
     color: #fff;
+    font-family: Tehran, sans-serif;
     padding: 1rem 1.8rem;
     border: 1px solid #000;
     background-color: #000;
