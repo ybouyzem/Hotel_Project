@@ -31,39 +31,39 @@ var data = {
         "ToContactPage": "Contact Us",
         "SmallTitle": "Hotel",
         "para1":
-        "The company itself is a very successful company. So where does the training run? To assume the fault of choosing the chosen one prevents everyone from following it? Here we bring the accusers who are present to be praised by those who praise her.",
+        "It is very important for the customer to pay attention to the adipiscing process. And so they forsook him for pleasures. What do we lead to the suppleness of the corrupt, unless pleasure flees from the architect, but with what pleasure does the blessed take pleasure when we accuse them of the duties of error? Less",
         "para2":
         "The company itself is a very successful company. So where does the training run? To assume the fault of choosing the chosen one prevents everyone from following it? Here we bring the accusers who are present to be praised by those who praise her.",
         "para3":
-        "The company itself is a very successful company. So where does the training run? To assume the fault of choosing the chosen one prevents everyone from following it? Here we bring the accusers who are present to be praised by those who praise her.",
+        "It is very important for the customer to pay attention to the adipiscing process. And so they forsook him for pleasures. What do we lead to the suppleness of the corrupt, unless pleasure flees from the architect, but with what pleasure does the blessed take pleasure when we accuse them of the duties of error? Less",
         "para4":
         "The company itself is a very successful company. So where does the training run? To assume the fault of choosing the chosen one prevents everyone from following it? Here we bring the accusers who are present to be praised by those who praise her.",
     },
     "french":
     {
-        "BigTitle": "A propos nous",
-        "ToContactPage": "Contactez-nous",
+        "BigTitle": "À propos nous",
+        "ToContactPage": "Contactez nous",
         "SmallTitle": "Hôtel",
         "para1":
-        "L'entreprise elle-même est une entreprise très prospère. Alors, où se passe la formation ? Assumer la faute de choisir l'élu empêche tout le monde de le suivre ? Ici, nous amenons les accusateurs qui sont présents pour être loués par ceux qui la louent.",
+        "Il est très important que le client fasse attention au processus d'adipiscing. Et ainsi ils l'ont abandonné pour les plaisirs. Que menons-nous à la souplesse des corrompus, à moins que le plaisir ne fuie l'architecte, mais avec quel plaisir les bienheureux se complaisent-ils quand nous les accusons des devoirs de l'erreur ? Moins",
         "para2":
         "L'entreprise elle-même est une entreprise très prospère. Alors, où se passe la formation ? Assumer la faute de choisir l'élu empêche tout le monde de le suivre ? Ici, nous amenons les accusateurs qui sont présents pour être loués par ceux qui la louent.",
         "para3":
-        "L'entreprise elle-même est une entreprise très prospère. Alors, où se passe la formation ? Assumer la faute de choisir l'élu empêche tout le monde de le suivre ? Ici, nous amenons les accusateurs qui sont présents pour être loués par ceux qui la louent.",
+        "Il est très important que le client fasse attention au processus d'adipiscing. Et ainsi ils l'ont abandonné pour les plaisirs. Que menons-nous à la souplesse des corrompus, à moins que le plaisir ne fuie l'architecte, mais avec quel plaisir les bienheureux se complaisent-ils quand nous les accusons des devoirs de l'erreur ? Moins",
         "para4":
         "L'entreprise elle-même est une entreprise très prospère. Alors, où se passe la formation ? Assumer la faute de choisir l'élu empêche tout le monde de le suivre ? Ici, nous amenons les accusateurs qui sont présents pour être loués par ceux qui la louent.",
     },
     "arabic":
     {
-        "BigTitle": "عنا",
-        "ToContactPage": "راسلنا هنا",
+        "BigTitle": "حول الفندق",
+        "ToContactPage": "تواصل معنا",
         "SmallTitle": "الفندق",
         "para1":
-        "االشركة نفسها هي شركة ناجحة للغاية. وهل يهرب منهم ليخفف من آلامهم ويتبعهم في آلامهم؟ أيمكن صدنا ذنب الذين غفر لهم ، والذين ولدوا أحرارا ومباركين؟ أعمى؟",
+        ".من المهم جدًا أن ينتبه العميل لعملية اشتقاق الدهون. فتركوه من أجل الملذات. ما الذي يقودنا إلى ليونة الفاسدين ، إلا إذا تفلت اللذة من المهندس المعماري ، ولكن بأي سرور يسعد المبارك عندما نتهمهم بواجبات الخطأ؟ أقل",
         "para2":
         ".الشركة نفسها هي شركة ناجحة للغاية. إذن أين يتم تشغيل التدريب؟ افتراض خطأ اختيار الشخص المختار يمنع الجميع من اتباعه؟ هنا نأتي بالمتهمين الحاضرين ليثني عليهم من يمدحها",
         "para3":
-        "الشركة نفسها هي شركة ناجحة للغاية. وهل يهرب منهم ليخفف من آلامهم ويتبعهم في آلامهم؟ أيمكن صدنا ذنب الذين غفر لهم ، والذين ولدوا أحرارا ومباركين؟ أعمى؟",
+        ".من المهم جدًا أن ينتبه العميل لعملية اشتقاق الدهون. فتركوه من أجل الملذات. ما الذي يقودنا إلى ليونة الفاسدين ، إلا إذا تفلت اللذة من المهندس المعماري ، ولكن بأي سرور يسعد المبارك عندما نتهمهم بواجبات الخطأ؟ أقل",
         "para4":
         ".الشركة نفسها هي شركة ناجحة للغاية. إذن أين يتم تشغيل التدريب؟ افتراض خطأ اختيار الشخص المختار يمنع الجميع من اتباعه؟ هنا نأتي بالمتهمين الحاضرين ليثني عليهم من يمدحها",
     },
