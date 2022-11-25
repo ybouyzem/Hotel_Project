@@ -54,6 +54,7 @@ header{
     align-items: center;
     padding: 0 2%;
     /* added by younes */
+    z-index: 10;
     position: fixed;
     box-shadow:2.5px 1.5px 6px #555;
 }
@@ -1180,4 +1181,304 @@ section{
 .SupportPage .Infos .box .link #link:hover{
     color: #000;
     background-color: #fff;
+}
+/* booking page */
+:root {
+    --color1:#000000;
+    --color2:#282A3A;
+    --color3:#735F32;
+    --color4:#C69749;
+    --color5:#2C061F;
+}
+.booking-background {
+    background-image: url(../BM_Hotel/images/bg1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+    border-radius: 15px;
+    
+}
+.container .box1,.container .box2,.container .box3 {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px rgb(37, 35, 35);
+}
+
+.container .box1  a img ,.container .box2 a img ,.container .box3 a img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .box1:hover .room,.container .box2:hover .activities,.container .box3:hover .events {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.title-box {
+    position: relative;
+    z-index: 2;
+    top: 80%;
+    left: 28%;
+    border-radius: 5px;
+    background-color:rgb(231, 235, 117);
+    color: gray;
+    font-family: 'lato';
+    font-size: small;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container div:hover .title-box {
+    opacity: 0;
+    transition: 0.3s;
+}
+.container div .content {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.container div:hover .content {
+    top: 90px;
+}
+.container div .content h2 {
+    margin: 5px 0px 0px 0px;
+    padding: 0;
+    text-align: center;
+    color: var(--color3);
+    font-family: 'Coca Cola ii';
+}
+.container div .content p {
+    font-size: 14px;
+    font-family:'lato';
+}
+.container div .content h5 {
+    margin: 5px 0px 5px 0px;
+    color:#009688;
+    font-family:'lato';
+}
+.spacing {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: content-box;
+}
+.offers p{
+    text-align: start;
+    font-family: 'lato';
+}
+.color-p {
+    color:gray;
+}
+/* for rooms cards */
+#rooms {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+#rooms div h1 {
+    margin-top: 70px;
+    padding: 0px 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#rooms div h3 {
+    padding: 0px 10vw;
+    margin-bottom: 40px;
+    color: #735F32;
+}
+.container-rooms {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x:scroll;
+    scroll-behavior:smooth;
+    height: 500px;
+}
+.container-rooms::-webkit-scrollbar {
+    display:none;
+}
+.royal-room ,.junior-room,.single-room,.double-room,.triple-room{
+    flex: 0 0 auto;
+    width: 350px;
+    height: 450px;
+    margin-right: 40px;
+    border-radius: 5px;
+    background-color:rgb(234, 234, 234) ;
+    box-shadow:0px 12px 12px  #555;
+}
+.room-image {
+    position: relative;
+    width: 350px;
+    height:250px;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+   
+}
+.royal-suite {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.discount-tag {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color:rgb(255, 88, 172);
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+
+.product-brand {
+    text-transform: uppercase;
+    padding-left: 5px;
+    color: #3e0028;
+}
+.room-desc {
+    width: 100%;
+    height: 15px;
+    opacity: 0.8;
+    font-size: 13px;
+    text-transform:capitalize;
+    margin: 5px 0px 0px 10px;
+    padding-right: 10px;
+}
+.detail-room {
+    margin: 10px 0px 15px 5px;
+    font-family: 'lato';
+    padding-left: 10px;
+    font-size: medium;
+}
+.detail-room p{
+    margin: 2px;
+}
+.price {
+    padding: 10px;
+    font-weight: 800;
+    color:#009688;
+}
+.actual-price {
+    margin-left: 150px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.pre-btn,.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(90deg, rgba(255,255,255,0) 0%, #fff 100%);
+    cursor:pointer;
+    z-index: 9;
+}
+.pre-btn {
+    left:0;
+    transform: rotate(180deg);
+}
+.nxt-btn {
+    right: 0;
+}
+.nxt-btn img,.pre-btn img {
+    opacity: 0.2;
+}
+.nxt-btn:hover img,.pre-btn:hover img {
+    opacity: 1;
+}
+/* for booking button */
+.book-room {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.book-now {
+    width: 200px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.book-now:hover {
+    transition: 0.5s;
+    color: #009688;
+    border-color: #009688;
+    transform: rotate(5deg);
+    font-weight: 600;
+    cursor: pointer;
+}
+/* top icon */
+.top-icon {
+    width: fit-content;
+    height: fit-content;
+}
+.top-icon img {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    margin-top: -10px;
+    position: absolute;
+    right: 25px;
+    transition: 0.5s;
+}
+.top-icon img:hover {
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    transition: 0.5s;
+}
+/* booking-form */
+#booking-form {
+    width: 50%;
+    height: 800px;
+    margin:50px 25% 50px 25%;
+    background-color: #3e0028;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px  ;
+    border-radius: 10px;
+}
+#booking-form form {
+    padding: 0px 50px 0px 50px;
+    background-color: #555;
+    width: 100%;
+}
+#booking-form form div{
+    margin:20px 50px 50px 20px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
