@@ -40,6 +40,15 @@ html{
     src: url(fonts/NewWaltDisneyUi-8YdA.ttf);
 }
 
+@font-face {
+    font-family: Tehran;
+    src: url('fonts/Hacen_Tehran.ttf');
+}
+
+@font-face {
+    font-family: Arbaeen;
+    src: url('fonts/Arbaeen.ttf');
+}
 /* The first Header */
 
 header{
@@ -136,7 +145,7 @@ header nav div svg{
 /* The second header */
 
 .head2{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: -300px;
     width: 300px;
@@ -251,7 +260,7 @@ section{
 
 .boxLogin,
 .boxSignIn{
-    position: absolute;
+    position: fixed;
     left: 33%;
     top: 20%;
     height: 500px;
@@ -270,7 +279,7 @@ section{
 
 .boxLogin{
     left: 35%;
-    top: 30%;
+    top: 25%;
 }
 
 .boxLogin{
@@ -788,6 +797,7 @@ section{
 .AboutTitle .Title span{
     font-size: 5.5rem;
     font-weight: bold;
+    font-family: Tehran, sans-serif;
     text-transform: uppercase;
     color: #000;
 }
@@ -795,6 +805,7 @@ section{
 .AboutTitle .Contact a{
     font-size: 1rem;
     font-weight: bold;
+    font-family: Tehran, sans-serif;
     text-transform: uppercase;
     color: #000;
     position: absolute;
@@ -827,7 +838,7 @@ section{
     line-height: 1.5rem;
     text-align: center;
     font-size: 1.2rem;
-    font-family: 'Indie Flower',Cairo, cursive;
+    font-family: 'Indie Flower',Arbaeen, cursive;
     padding: 1rem 0;
 }
 
@@ -846,6 +857,11 @@ section{
     stroke: #fff;
 }
 
+footer.AboutFooter{
+    position: absolute;
+    top: 100vh;
+    height: 70vh;
+}
 
 /* ***********************************
 ***********************************
@@ -924,15 +940,17 @@ section{
 
 .Box .Desc span{
     font-size: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cairo;
     color: #000;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .Box .Desc p{
+    font-size: 1rem;
     text-align: center;
     line-height: 1.5rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: Cairo;
     margin: 2% 0;
     padding: 0 5%;
     color: #000;
@@ -940,7 +958,7 @@ section{
 
 .Box .Desc a{
     font-family: Cairo;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #252525;
     text-decoration: underline;
 }
@@ -962,12 +980,13 @@ section{
     position: absolute;
     top: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("images/bg1.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    animation: transform 60s infinite ease;
 }
 
 .HomePage .HomePageDesc{
@@ -983,6 +1002,27 @@ section{
     overflow: hidden;
 }
 
+@keyframes transform {
+    0%{
+        background-image: url("images/bg1.jpg");
+    }
+    20%{
+        background-image: url("images/Hotel.jpg");
+    }
+    40%{
+        background-image: url("images/kitchen.jpg");
+    }
+    60%{
+        background-image: url("images/restaurant.jpg");
+    }
+    80%{
+        background-image: url("images/room.jpg");
+    }
+    100%{
+        background-image: url("images/parking.jpg");
+    }
+}
+
 .HomePage .HomePageDesc:before{
     content: '';
     position: absolute;
@@ -990,11 +1030,11 @@ section{
     left: -1rem;
     right: -1rem;
     bottom: -1rem;
-    background-image: url('images/bg1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     filter: blur(4px);
+    animation: transform 60s infinite ease;
 }
 
 /* Partie d'accueilir */
@@ -1066,6 +1106,404 @@ section{
 }
 
 
+/* To bottom */
+
+.HomePage .button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 90vh;
+}
+
+.HomePage .button svg{
+    stroke: #fff;
+    cursor: pointer;
+}
+
+.HomePage .button svg:hover{
+    animation: jump 0.5s infinite both ease;
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* main of home */
+
+.HomeMain{
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Description Hotel */
+
+.HomeMain .HotelDesc{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.HomeMain .HotelDesc .box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.HomeMain .HotelDesc .box .HotelDescValue{
+    padding: 1rem;
+}
+
+.HomeMain .HotelDesc .box .HotelDescValue span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #252525;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.HomeMain .HotelDesc .box .HotelDescLigne{
+    width: 100%;
+    border-top: 1px solid #000;
+    
+}
+
+.HomeMain .HotelDesc .box .HotelDescValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeMain .HotelDesc .box .HotelDescValue svg{
+    width: 1.5rem;
+    margin-bottom: -1rem;
+    stroke: goldenrod;
+}
+
+.HomeMain .HotelDesc .box .HotelDescTitle{
+    padding: 1rem;
+}
+
+
+.HomeMain .HotelDesc .box .HotelDescTitle span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #252525;
+    font-family: Cairo;
+}
+
+/* Services of the hotel */
+
+.HomeMain .HotelServices{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.HomeMain .HotelServices .HotelServiceBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    padding: 0 3%;
+    overflow: hidden;
+}
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxTitle{
+    padding-top: 2rem;
+}
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxTitle span{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxServices{
+    padding: 1rem 1rem;
+}
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxServices ul li{
+    display: flex;
+    align-items: center;
+}
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxServices ul li span{
+    display: flex;
+    align-items: center;
+    font-family: Cairo;
+}
+/* **************************** */
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxServices ul li svg{
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxToHosting{
+    align-self: center;
+    padding-bottom: 2rem;
+}
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxToHosting a{
+    color: #252525;
+    text-decoration: underline;
+}
+
+/* **************************** */
+
+.HomeMain .HotelServices .HotelServiceBox .HotelServiceBoxServices ul.ReasonsList li svg{
+    width: 1rem;
+}
+
+/* locations for tourists */
+
+/* ************* Title **************** */
+
+.HomeMain .toTourism{
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+    animation: transform 60s infinite ease;
+}
+
+.HomeMain .toTourism .toTourismTitle span{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Cairo;
+    color: #fff;
+    filter: drop-shadow(0 0 16px #000);
+}
+
+/* ************ Locations *************** */
+
+.HomeMain .toTourism .locations{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.HomeMain .toTourism .locations .item{
+    width: 20%;
+    height: 95%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px #000;
+}
+
+.HomeMain .toTourism .locations .item .itemBG{
+    width: 100%;
+    height: 40%;
+    transition: .3s;
+}
+
+.HomeMain .toTourism .locations .item .itemDesc{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.HomeMain .toTourism .locations .item .itemBG:hover{
+    height: 60%;
+}
+
+.HomeMain .toTourism .locations .item .itemDesc .itemDescTitle,
+.HomeMain .toTourism .locations .item .itemDesc .itemDescLien,
+.HomeMain .toTourism .locations .item .itemDesc .itemDescParagraph{
+    transition: .3s;
+} 
+
+.HomeMain .toTourism .locations .item .itemBG:hover+.itemDesc .itemDescTitle,
+.HomeMain .toTourism .locations .item .itemBG:hover+.itemDesc .itemDescLien,
+.HomeMain .toTourism .locations .item .itemBG:hover+.itemDesc .itemDescParagraph{
+    padding: 0;
+} 
+/* ************* setting backgrounds ************** */
+
+.HomeMain .toTourism .locations .item1 .itemBG{
+    background-image: url("images/ain\ asserdoun.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.HomeMain .toTourism .locations .item2 .itemBG{
+    background-image: url("images/bel\ ouidane.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.HomeMain .toTourism .locations .item3 .itemBG{
+    background-image: url("images/ain\ asserdoun.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.HomeMain .toTourism .locations .item4 .itemBG{
+    background-image: url("images/bel\ ouidane.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* ************* setting the description ************* */
+
+.HomeMain .toTourism .locations .item .itemDesc .itemDescTitle{
+    padding-bottom: 1rem;
+}
+
+.HomeMain .toTourism .locations .item .itemDesc .itemDescTitle span{
+    font-family: Cairo;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.HomeMain .toTourism .locations .item .itemDesc .itemDescParagraph{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.HomeMain .toTourism .locations .item .itemDesc .itemDescParagraph p{
+    text-align: center;
+    font-family: Cairo;
+    font-size: 1rem;
+}
+
+.HomeMain .toTourism .locations .item .itemDesc .itemDescLien a{
+    font-family: Cairo;
+    font-size: 0.9rem;
+    color: #252525;
+    text-decoration: underline;
+}
+
+/* footer */
+footer{
+    height: 70vh;
+    width: 100%;
+    background-color: #252525;
+    padding: 0 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .FooterInfos{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .FooterInfos .FooterInfosBox{
+    width: 20%;
+}
+
+footer .FooterInfos .Box2{
+    width: 40%;
+    text-align: center;
+}
+
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxTitle{
+    padding: 1rem 0;
+}
+
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxTitle span{
+    font-family: Cairo;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .FooterInfos .Box1,
+footer .FooterInfos .Box3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .FooterInfos .Box1 .FooterInfosBoxLien ul li,
+footer .FooterInfos .Box3 .FooterInfosBoxLien a{
+    margin-left: 4rem;
+}
+
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien ul li{
+    display: flex;
+    align-items: center;
+}
+
+
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a{
+    font-family: Cairo;
+    font-size: 1rem;
+    color: #ccc;
+    transition: .3s;
+}
+
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a:hover{
+    color: #fff;
+}
+
+footer .FooterInfos .Box2 .FooterInfosBoxLien ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .FooterInfos .FooterInfosLigne{
+    height: 80%;
+    border-right: 1px solid #fff;
+}
+
+footer .FooterLigne{
+    width: 80%;
+    border-top: 1px solid #fff;
+}
+
+footer .FooterCopyrights span{
+    color: #ccc;
+    font-family: Cairo;
+    font-size: 1rem;
+}
+
+footer .FooterLogo span{
+    font-size: 5rem;
+    font-family: Disney;
+    color: #ccc;
+}
+
 /* ***********************************
 ***********************************
 *********************************** */
@@ -1113,7 +1551,10 @@ section{
     color: #ffffff;
     font-size: 1rem; 
     filter: drop-shadow(0 0 16px rgba(0, 0, 0, 5));
+    font-family: Cairo;
 }
+
+
 
 /* The two boxes */
 
@@ -1153,6 +1594,7 @@ section{
     text-align: center;
     font-size: .9rem;
     line-height: 1.2rem;
+    font-family: Cairo;
 }   
 
 .SupportPage .Infos .box .link{
@@ -1172,6 +1614,7 @@ section{
 
 .SupportPage .Infos .box .link #link{
     color: #fff;
+    font-family: Tehran, sans-serif;
     padding: 1rem 1.8rem;
     border: 1px solid #000;
     background-color: #000;
@@ -1182,6 +1625,7 @@ section{
     color: #000;
     background-color: #fff;
 }
+<<<<<<< HEAD
 /* booking page */
 :root {
     --color1:#000000;
@@ -1482,3 +1926,21 @@ section{
     display: flex;
     justify-content: space-between;
 }
+=======
+
+footer.CallServiceFooter{
+    position: absolute;
+    top: 100vh;
+    height: 70vh;
+}
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Booking browser */
+
+
+/* Type your code below */
+>>>>>>> refs/remotes/origin/main
