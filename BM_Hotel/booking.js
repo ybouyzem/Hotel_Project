@@ -16,5 +16,6 @@ productContainers.forEach((item, i) => {
 
 //onclick book button
 function myFunction (){
-    
+    myForm=document.getElementById('booking-form');
+    document.location.href("#booking-form");
 }
