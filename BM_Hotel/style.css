@@ -1624,7 +1624,11 @@ footer .FooterLogo span{
     color: #000;
     background-color: #fff;
 }
+<<<<<<< HEAD
 /* <<<<<<< HEAD */
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
 /* booking page */
 :root {
     --color1:#000000;
@@ -1945,6 +1949,7 @@ footer .FooterLogo span{
     display: flex;
     justify-content: space-between;
 }
+<<<<<<< HEAD
 #booking-form form div label {
     color: teal;
     font-family: 'lato';
@@ -1994,6 +1999,9 @@ footer .FooterLogo span{
     color:rgb(28, 151, 145);
 }
 /* ======= */
+=======
+=======
+>>>>>>> refs/remotes/origin/main
 
 footer.CallServiceFooter{
     position: absolute;
@@ -2010,3 +2018,7 @@ footer.CallServiceFooter{
 
 
 /* Type your code below */
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
