@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
 }
@@ -42,4 +42,123 @@ header nav ul li a:hover {
 }
 .sign-out {
     margin:6px 0px 0px 50px;
+} */
+
+@font-face {
+    font-family: Disney;
+    src: url(../BM_Hotel/fonts/NewWaltDisneyUi-8YdA.ttf);
 }
+
+@font-face {
+    font-family: Cairo;
+    src: url(../BM_Hotel/fonts/Cairo-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ***************************************** */
+
+/* header */
+
+header{
+    width: 20%;
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 1rem;
+    /* position: relative; */
+}
+
+/* header::before{
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 50px;
+} */
+
+/* Logo */
+header .Logo{
+    display: flex;
+    gap: 1rem;
+}
+
+header .Logo span{
+    font-family: Disney;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* headers */
+header nav{
+    padding: 1rem 1rem;
+}
+
+header nav ul li{
+    width: 150%;
+    margin: 1.5rem 0;
+    padding: .5rem 1rem;
+    border-radius: 30px 0 0 30px;
+    transition: .3s;
+}
+
+header nav ul li:hover{
+    background-color: #fff;
+}
+
+header nav ul li:hover a span{
+    color: #191919;
+}
+
+header nav ul li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: Cairo;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #ccc;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+header nav ul li a svg{
+    width: 1.5rem;
+}
+
+/* Sign out */
+header .Out{
+    align-self: center;
+    margin-top: 2rem;
+}
+
+header .Out a{
+    font-family: Cairo;
+    color: #ccc;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s;
+}
+
+header .Out a:hover{
+    color: #fff;
+}
+
+/* ***************************************** */
+
+/* main */
+

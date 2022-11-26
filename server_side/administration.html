@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>admin</title>
+        <title>Administration | Béni Mellal Hotel</title>
+        <link rel="shortcut icon" href="../BM_Hotel/images/logo.jpg" type="image/x-icon">
         <link rel="stylesheet" href="administration.css">
     </head>
     <body>
-        <header>
+        <!-- <header>
             <div><img src="images/admin.png" width="30px" height="30px"> Direction Générale</div>
             <nav>
                 <ul type="none">
@@ -17,12 +18,130 @@
                 </ul>
             </nav>
         </header>
-        <div class="hr"></div>
+        <div class="hr"></div> -->
         <!-- <section>
             <from>
                 <input type="text">
                 
             </from>
         </section> -->
+        <header>
+            <div class="Logo">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="3" y1="21" x2="21" y2="21" />
+                        <path d="M5 21v-14l8 -4v18" />
+                        <path d="M19 21v-10l-6 -4" />
+                        <line x1="9" y1="9" x2="9" y2="9.01" />
+                        <line x1="9" y1="12" x2="9" y2="12.01" />
+                        <line x1="9" y1="15" x2="9" y2="15.01" />
+                        <line x1="9" y1="18" x2="9" y2="18.01" />
+                      </svg>
+                </div>
+                <div>
+                    <span>Hotel</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-details" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M13 5h8" />
+                        <path d="M13 9h5" />
+                        <path d="M13 15h8" />
+                        <path d="M13 19h5" />
+                        <rect x="3" y="4" width="6" height="6" rx="1" />
+                        <rect x="3" y="14" width="6" height="6" rx="1" />
+                      </svg><span>Réception</span></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="3" y1="21" x2="21" y2="21" />
+                        <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+                        <line x1="5" y1="21" x2="5" y2="10.85" />
+                        <line x1="19" y1="21" x2="19" y2="10.85" />
+                        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                      </svg><span>Achats & Ventes</span></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-glass" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="8" y1="21" x2="16" y2="21" />
+                        <line x1="12" y1="15" x2="12" y2="21" />
+                        <path d="M17 3l1 7c0 3.012 -2.686 5 -6 5s-6 -1.988 -6 -5l1 -7h10z" />
+                      </svg><span>Aliments & Boissons</span></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 9v2m0 4v.01" />
+                        <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
+                      </svg><span>Logistique</span></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                      </svg><span>Employés</span></a></li>
+                </ul>
+            </nav>
+            <div class="Out">
+                <a href="home.html">Sign out</a>
+            </div>
+        </header>
+        <main>
+            <div class="box">
+                <div class="Title">
+                    <span>Réception</span>
+                </div>
+                <div class="Desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit esse quaerat aliquam, itaque nemo excepturi ipsum numquam qui fugit repellat?</p>
+                </div>
+                <div class="ToPage">
+                    <a href="#">To...</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="Title">
+                    <span>Achats & Ventes</span>
+                </div>
+                <div class="Desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda non earum fuga sint cupiditate blanditiis delectus. Veritatis, ducimus eligendi.</p>
+                </div>
+                <div class="ToPage">
+                    <a href="#">To...</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="Title">
+                    <span>Aliments & Boissons</span>
+                </div>
+                <div class="Desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla culpa in. Mollitia, voluptas harum facere non expedita similique magnam!</p>
+                </div>
+                <div class="ToPage">
+                    <a href="#">To...</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="Title">
+                    <span>Logistique</span>
+                </div>
+                <div class="Desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat pariatur molestiae in deserunt excepturi commodi! Distinctio in magni sed earum?</p>
+                </div>
+                <div class="ToPage">
+                    <a href="#">To...</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="Title">
+                    <span>Employées</span>
+                </div>
+                <div class="Desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt velit reiciendis ipsa, ea placeat quis rem molestiae est quod consequatur?</p>
+                </div>
+                <div class="ToPage">
+                    <a href="#">To...</a>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
