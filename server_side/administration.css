@@ -54,6 +54,8 @@ header nav ul li a:hover {
     src: url(../BM_Hotel/fonts/Cairo-VariableFont_wght.ttf);
 }
 
+/* Global */
+
 *{
     padding: 0;
     margin: 0;
@@ -62,12 +64,37 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #252525;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+#Grid-Container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+body{
+    background-color: #191919;
+}
+
 /* ***************************************** */
 
 /* header */
 
 header{
-    width: 20%;
+    width: 100%;
     height: 100vh;
     background-color: #191919;
     display: flex;
@@ -75,7 +102,6 @@ header{
     justify-content: flex-start;
     overflow: hidden;
     padding: 1rem;
-    /* position: relative; */
 }
 
 /* header::before{
@@ -162,3 +188,162 @@ header .Out a:hover{
 
 /* main */
 
+main{
+    background-color: #fff;
+    overflow: hidden;
+}
+
+main .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50px;
+    box-shadow: 0 0 16px #909090;
+}
+
+main .box .Title span{
+    font-family: Cairo;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #252525;
+    padding: 1rem;
+}
+
+main .box .Desc{
+    padding: 1rem;
+}
+
+main .box .Desc p{
+    text-align: center;
+    font-family: Cairo;
+    font-size: 1rem;
+    color: #191919;
+}
+
+main .box .ToPage{
+    padding: 1rem;
+}
+
+main .box .ToPage a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 .8rem;
+    background-color: #191919;
+    border-radius: 30px;
+}
+
+main .box .ToPage a span{
+    font-family: Cairo;
+    font-size: .9rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ccc;
+    transition: .3s;
+}
+
+main .box .ToPage a svg{
+    stroke: #ccc;
+    width: 1.5rem;
+    transition: .3s;
+}
+
+main .box .ToPage a span:hover,
+main .box .ToPage a span:hover + svg{
+    stroke: #fff;
+    color: #fff;
+}
+
+main .box .ToPage a span + svg{
+    transition: .3s;
+}
+
+main .box .ToPage a span:hover + svg{
+    transform: rotate(-180deg);
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(15rem,auto);
+    gap: 2rem;
+}
+
+#child0{
+    grid-column: 1 / 3;
+    flex-direction: row;
+    background-color: #191919;
+    color: #fff;
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#child0::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 0 50px 0 0;
+}
+
+#child0 .HotelDesc{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#child0 .HotelDesc .box1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#child0 .HotelDesc .box1 .HotelDescValue{
+    padding: 1rem;
+}
+
+#child0 .HotelDesc .box1 .HotelDescValue span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#child0 .HotelDesc .box1 .HotelDescLigne{
+    width: 100%;
+    border-top: 1px solid #fff;
+    
+}
+
+#child0 .HotelDesc .box1 .HotelDescValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#child0 .HotelDesc .box1 .HotelDescValue svg{
+    width: 1.2rem;
+    margin-bottom: -1rem;
+    stroke: goldenrod;
+}
+
+#child0 .HotelDesc .box1 .HotelDescTitle{
+    padding: 1rem;
+}
+
+
+#child0 .HotelDesc .box1 .HotelDescTitle span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: Cairo;
+}

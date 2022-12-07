@@ -1459,7 +1459,7 @@ footer .FooterInfos .Box3 .FooterInfosBoxLien a{
     margin-left: 4rem;
 }
 
-footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien ul li{
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien ul li a{
     display: flex;
     align-items: center;
 }
@@ -1469,11 +1469,17 @@ footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a{
     font-family: Cairo;
     font-size: 1rem;
     color: #ccc;
+}
+
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a span,
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a svg{
     transition: .3s;
 }
 
-footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a:hover{
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a:hover,
+footer .FooterInfos .FooterInfosBox .FooterInfosBoxLien a:hover svg{
     color: #fff;
+    stroke: #ccc;
 }
 
 footer .FooterInfos .Box2 .FooterInfosBoxLien ul{
@@ -1624,11 +1630,20 @@ footer .FooterLogo span{
     color: #000;
     background-color: #fff;
 }
-<<<<<<< HEAD
-/* <<<<<<< HEAD */
-=======
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/main
+
+footer.CallServiceFooter{
+    position: absolute;
+    top: 100vh;
+    height: 70vh;
+}
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Booking browser */
+
+
 /* booking page */
 :root {
     --color1:#000000;
@@ -1949,7 +1964,7 @@ footer .FooterLogo span{
     display: flex;
     justify-content: space-between;
 }
-<<<<<<< HEAD
+
 #booking-form form div label {
     color: teal;
     font-family: 'lato';
@@ -1999,26 +2014,3 @@ footer .FooterLogo span{
     color:rgb(28, 151, 145);
 }
 /* ======= */
-=======
-=======
->>>>>>> refs/remotes/origin/main
-
-footer.CallServiceFooter{
-    position: absolute;
-    top: 100vh;
-    height: 70vh;
-}
-
-
-/* ***********************************
-***********************************
-*********************************** */
-
-/* Booking browser */
-
-
-/* Type your code below */
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
