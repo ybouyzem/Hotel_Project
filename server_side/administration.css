@@ -321,19 +321,12 @@ main{
 #child0 .HotelDesc .box1 .HotelDescLigne{
     width: 100%;
     border-top: 1px solid #fff;
-    
 }
 
 #child0 .HotelDesc .box1 .HotelDescValue{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#child0 .HotelDesc .box1 .HotelDescValue svg{
-    width: 1.2rem;
-    margin-bottom: -1rem;
-    stroke: goldenrod;
 }
 
 #child0 .HotelDesc .box1 .HotelDescTitle{

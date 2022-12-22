@@ -929,7 +929,7 @@ footer.AboutFooter{
     width: 100%;
     height: 130%;
     background-color: rgba(0, 0, 0, 0);
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 16px rgba(0, 0, 0, 0.5); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1620,7 +1620,7 @@ footer .FooterLogo span{
 .SupportPage .Infos .box .link #link{
     color: #fff;
     font-family: Tehran, sans-serif;
-    padding: 1rem 1.8rem;
+    padding: .8rem 1.3rem;
     border: 1px solid #000;
     background-color: #000;
     transition: .3s;
