@@ -1665,6 +1665,15 @@ footer.CallServiceFooter{
     background-attachment: fixed;
     animation: change 20s infinite ease-in-out;
 }
+.header-section {
+    padding-top: 110px;
+    font-size: x-large;
+    width: 100%;
+    color:yellow;
+}
+.header-section h1,h2 {
+    text-align: center;
+}
 @keyframes change {
     0%{
         background-image: url("images/Hotel.jpg");
@@ -1689,7 +1698,7 @@ footer.CallServiceFooter{
     position: relative;
     width: 1200px;
     height: 300px;
-    margin: 240px auto;
+    margin: 150px auto;
     border-radius: 15px;
     
 }
