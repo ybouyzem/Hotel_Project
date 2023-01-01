@@ -1643,6 +1643,11 @@ footer.CallServiceFooter{
 
 /* Booking browser */
 
+.bookingPage{
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+}
 
 /* booking page */
 :root {

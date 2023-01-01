@@ -110,421 +110,424 @@
                 </ul>
             </div>
         </div>
-        <!-- added by younes -->
-        <div class="booking-background">
-            <div class="header-section">
-                <h1 id="top">Welcome to your Hotel</h1>
-                <h2>Search best service with a good price and much more...</h2>
+        <!-- ************* -->
+        <section>
+            <div class="boxSignIn" id="box-sign-in">
+                <div class="headForm">
+                    <ul>
+                        <li>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" onclick="closeboxSignIn()">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                            <span>Sign up</span>
+                        </li>
+                    </ul>
+                </div>
+                <form action="login.php" method="post">
+                    <div class="Name">
+                        <div class="group-form">
+                            <input type="text" name="FirstName" id="" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="group-form">
+                            <input type="text" name="LastName" id="" required>
+                            <span>Last Name</span>
+                        </div>
+                    </div>
+                    
+                    <div class="group-form">
+                        <input type="email" name="Email" id="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="group-form">
+                        <input type="password" name="Password" id="" minlength="8" required>
+                        <span>Password</span>
+                    </div>
+                    <div class="group-form">
+                        <input type="password" name="PasswordConfirm" id="" required>
+                        <span>Confirm Password</span>
+                    </div>
+                    <div class="liens">
+                        <a href="#" onclick="openboxLogin()">Already have account</a>
+                    </div>
+                    <div class="group-form">
+                        <input type="submit" name="" id="" value="Connect">
+                    </div>
+                    
+                </form>
             </div>
-            <div class="container">
-                <div class="box1">
-                        <a href="#rooms">
-                            <img class="room"src="../BM_Hotel/images/rooms.jpg" aria-hidden="true" ></img>
-                            <h3 class="title-box">Rooms</h3>   
-                        </a>
-                        <div class="content">
-                            <h2>Rooms</h2>
-                            <p class="color-p">By clicking this image, you will see all our rooms and it's information.</p>
-                            <h5>Our Offers</h5>
-                            <div class="rooms-details">
-                                <div class="spacing">
-                                    <p>Royal Suite</p>
-                                    <div>
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+            <div class="boxLogin" id="box-login">
+                <div class="headForm">
+                    <ul>
+                        <li>
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" onclick="closeboxLogin()">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                            <span>Login</span>
+                        </li>
+                    </ul>
+                </div>
+                <form action="script_login.php" method="post">
+                    <div class="group-form">
+                        <input type="email" name="emailLogin" id="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="group-form">
+                        <input type="Password" name="passLogin" id="" required>
+                        <span>Password</span>
+                    </div>
+                    <div class="liens">
+                        <a href="#">Forgot Password</a>
+                        <a href="#" onclick="openboxSignIn()">Create account</a>
+                    </div>
+                    <div class="group-form">
+                        <input type="submit" name="submit" id="" value="Login">
+                    </div>
+                </form>
+            </div>
+        
+    </section>
+    <!-- ************************ -->
+        <div class="bookingPage">
+                    <!-- added by younes -->
+                <div class="booking-background">
+                    <div class="header-section">
+                        <h1 id="top">Welcome to your Hotel</h1>
+                        <h2>Search best service with a good price and much more...</h2>
+                    </div>
+                    <div class="container">
+                        <div class="box1">
+                                <a href="#rooms">
+                                    <img class="room"src="../BM_Hotel/images/rooms.jpg" aria-hidden="true" ></img>
+                                    <h3 class="title-box">Rooms</h3>   
+                                </a>
+                                <div class="content">
+                                    <h2>Rooms</h2>
+                                    <p class="color-p">By clicking this image, you will see all our rooms and it's information.</p>
+                                    <h5>Our Offers</h5>
+                                    <div class="rooms-details">
+                                        <div class="spacing">
+                                            <p>Royal Suite</p>
+                                            <div>
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="spacing">
+                                            <p>Junior Suite</p>
+                                            <div>
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
+                                            </div>
+                                        </div>       
+                                        <div class="spacing">
+                                            <p>Single Room</p>
+                                            <div>
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="spacing">
+                                            <p>Double Room & Triple Room</p>
+                                            <div>
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
+                                                <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                  
-                                <div class="spacing">
-                                    <p>Junior Suite</p>
-                                    <div>
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
-                                    </div>
-                                </div>       
-                                <div class="spacing">
-                                    <p>Single Room</p>
-                                    <div>
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
-                                    </div>
+                        </div>
+                        <div class="box2">
+                            <a href="">
+                                <img class="activities"src="../BM_Hotel/images/activities.jpg" aria-hidden="true" ></img>
+                                <h3 class="title-box">Activities</h3>
+                            </a>
+                            <div class="content">
+                                <h2>Activities</h2>
+                                <p class="color-p">By clicking this image, you will see all our activities and it's information.</p>
+                                <h5>Our Offers</h5>
+                                <div class="offers">
+                                    <p>-Fishing (Carp, Zander, Black bass, Pike and more)</p>
+                                    <p>-Hunting pigeons or wild boar</p>
+                                    <p>-Mountain Biking</p>
+                                    <p>-White water rafting in the river Ahansal</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="box3">
+                            <a href="">
+                                <img class="events"src="../BM_Hotel/images/events.jpg" aria-hidden="true"></img>
+                                <h3 class="title-box">Events</h3>
                                 
-                                <div class="spacing">
-                                    <p>Double Room & Triple Room</p>
-                                    <div>
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star-paint.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
-                                        <img src="../BM_Hotel/images/star.png" width="15px" height="15px">
-                                    </div>
+                            </a>
+                            <div class="content">
+                                <h2>Events</h2>
+                                <p class="color-p">By clicking this image, you will see all our events and it's information.</p>
+                                <h5>Our Offers</h5>
+                                <div class="offers">
+                                    <p>-Moroccan weeding ceremonies</p>
+                                    <p>-Ahidous & Ahouach</p>
+                                    <p>-other Cultural events</p>
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div class="box2">
-                    <a href="">
-                        <img class="activities"src="../BM_Hotel/images/activities.jpg" aria-hidden="true" ></img>
-                        <h3 class="title-box">Activities</h3>
-                    </a>
-                    <div class="content">
-                        <h2>Activities</h2>
-                        <p class="color-p">By clicking this image, you will see all our activities and it's information.</p>
-                        <h5>Our Offers</h5>
-                        <div class="offers">
-                            <p>-Fishing (Carp, Zander, Black bass, Pike and more)</p>
-                            <p>-Hunting pigeons or wild boar</p>
-                            <p>-Mountain Biking</p>
-                            <p>-White water rafting in the river Ahansal</p>
-                        </div>
                     </div>
                 </div>
-                <div class="box3">
-                    <a href="">
-                        <img class="events"src="../BM_Hotel/images/events.jpg" aria-hidden="true"></img>
-                        <h3 class="title-box">Events</h3>
-                        
-                    </a>
-                    <div class="content">
-                        <h2>Events</h2>
-                        <p class="color-p">By clicking this image, you will see all our events and it's information.</p>
-                        <h5>Our Offers</h5>
-                        <div class="offers">
-                            <p>-Moroccan weeding ceremonies</p>
-                            <p>-Ahidous & Ahouach</p>
-                            <p>-other Cultural events</p>
-                        </div>
+                <!-- rooms cards -->
+                <div id="rooms">
+                    <div>
+                        <h1>ROOMS</h1>
+                        <h3>Search for your best room</h3>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- rooms cards -->
-        <div id="rooms">
-            <div>
-                <h1>ROOMS</h1>
-                <h3>Search for your best room</h3>
-            </div>
-            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
-            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
-            <div class="container-rooms">
-                <!-- Royal-Suite -->
-                <div class="royal-room">
-                    <div class="room-image">
-                        <span class="discount-tag">25% off</span>
-                        <img src="images/royalSuite.jpg" alt="" class="royal-suite">
-                    </div>
-                    <div class="product-info"></div>
-                    <h2 class="product-brand">Royal Suite</h2>
-                    <p class="room-desc">Royale Suite in traditional  style with air condition, TV, King size bed + 2/3 standard beds. Breakfast included.</p>
-                    <br>
-                    <div class="detail-room">
-                        <p>Beds: <span style="color:cadetblue ;">Double, Twin beds - Twin</span></p>
-                        <p >Occuppation: <span style="color:cadetblue ;">3</span></p>
-                        <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
-                        <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
-                    </div>
-                    <span class="price">3300MDH</span>
-                    <span class="actual-price">4000MDH</span>
-                </div>
-                <!-- Junior-Suite -->
-                <div class="junior-room">
-                    <div class="room-image">
-                        <span class="discount-tag">40% off</span>
-                        <img src="images/juniorSuite.jpg" alt="" class="royal-suite">
-                    </div>
-                    <h2 class="product-brand">Junior Suite</h2>
-                    <p class="room-desc">visitor's lounge, large separate bedroom, private lounge.</p>
-                    <br>
-                    <div class="detail-room">
-                        <p>Beds: <span style="color:cadetblue ;">Triple</span></p>
-                        <p >Occuppation: <span style="color:cadetblue ;">3</span></p>
-                        <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
-                        <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
-                    </div>
-                    <span class="price">1500MDH</span>
-                    <span class="actual-price">2500MDH</span>
-                </div>
-                <div class="single-room">
-                    <div class="room-image">
-                        <span class="discount-tag"> 0% off</span>
-                        <img src="images/singleRoom.jpg" alt="" class="royal-suite">
-                    </div>
-                    <h2 class="product-brand">Single Room</h2>
-                    <p class="room-desc">Covering an area of ​​approximately 25m², the rooms have either a "pool" view or a "garden".</p>
-                    <br>
-                    <div class="detail-room">
-                        <p>Beds: <span style="color:cadetblue ;">1</span></p>
-                        <p >Occuppation: <span style="color:cadetblue ;">1</span></p>
-                        <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
-                        <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
-                    </div>
-                    <span class="price">500MDH</span>
-                    <span class="actual-price">0000MDH</span>
-                </div>
-                <!-- double-room -->
-                <div class="double-room">
-                    <div class="room-image">
-                        <span class="discount-tag">25% off</span>
-                        <img src="images/doubleRoom.jpg" alt="" class="royal-suite">
-                    </div>
-                    <h2 class="product-brand">Double Room</h2>
-                    <p class="room-desc">Covering an area of ​​approximately 25m², the rooms have either a "pool" view or a "garden".</p>
-                    <br>
-                    <div class="detail-room">
-                        <p>Beds: <span style="color:cadetblue ;">2</span></p>
-                        <p >Occuppation: <span style="color:cadetblue ;">2</span></p>
-                        <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
-                        <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
-                    </div>
-                    <span class="price">1000MDH</span>
-                    <span class="actual-price">1500MDH</span>
-                </div>
-                <!-- triple-room -->
-                <div class="triple-room">
-                    <div class="room-image">
-                        <span class="discount-tag">15% off</span>
-                        <img src="images/tripleRoom.jpg" alt="" class="royal-suite">
-                    </div>
-                    <h2 class="product-brand">Triple Room</h2>
-                    <p class="room-desc">Covering an area of ​​approximately 25m², the rooms have either a "pool" view or a "garden".</p>
-                    <br>
-                    <div class="detail-room">
-                        <p>Beds: <span style="color:cadetblue ;">3</span></p>
-                        <p >Occuppation: <span style="color:cadetblue ;">3</span></p>
-                        <p >Children (0 to 11 yo): <span style="color:cadetblue;">2</span></p>
-                        <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
-                    </div>
-                    <span class="price">1200MDH</span>
-                    <span class="actual-price">1500MDH</span>
-                </div>
-            </div>
-            <div class="book-room">
-                <a href="#form-of-booking" class="test"><input type="button" value="Book Now"  class="book-now"></a>
-                <a href="#top" class="top-icon"><img src="images/top.png" alt="" ></a>
-            </div>
-        </div>
-        
-            
-        
-<!-- ************* -->
-        <!-- <section>
-                <div class="boxSignIn" id="box-sign-in">
-                    <div class="headForm">
-                        <ul>
-                            <li>
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" onclick="closeboxSignIn()">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <line x1="18" y1="6" x2="6" y2="18" />
-                                    <line x1="6" y1="6" x2="18" y2="18" />
-                                </svg>
-                                <span>Sign up</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <form action="login.php" method="post">
-                        <div class="Name">
-                            <div class="group-form">
-                                <input type="text" name="FirstName" id="" required>
-                                <span>First Name</span>
+                    <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+                    <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+                    <div class="container-rooms">
+                        <!-- Royal-Suite -->
+                        <div class="royal-room">
+                            <div class="room-image">
+                                <span class="discount-tag">25% off</span>
+                                <img src="images/royalSuite.jpg" alt="" class="royal-suite">
                             </div>
-                            <div class="group-form">
-                                <input type="text" name="LastName" id="" required>
-                                <span>Last Name</span>
+                            <div class="product-info"></div>
+                            <h2 class="product-brand">Royal Suite</h2>
+                            <p class="room-desc">Royale Suite in traditional  style with air condition, TV, King size bed + 2/3 standard beds. Breakfast included.</p>
+                            <br>
+                            <div class="detail-room">
+                                <p>Beds: <span style="color:cadetblue ;">Double, Twin beds - Twin</span></p>
+                                <p >Occuppation: <span style="color:cadetblue ;">3</span></p>
+                                <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
+                                <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
                             </div>
+                            <span class="price">3300MDH</span>
+                            <span class="actual-price">4000MDH</span>
                         </div>
-                        
-                        <div class="group-form">
-                            <input type="email" name="Email" id="" required>
-                            <span>Email</span>
+                        <!-- Junior-Suite -->
+                        <div class="junior-room">
+                            <div class="room-image">
+                                <span class="discount-tag">40% off</span>
+                                <img src="images/juniorSuite.jpg" alt="" class="royal-suite">
+                            </div>
+                            <h2 class="product-brand">Junior Suite</h2>
+                            <p class="room-desc">visitor's lounge, large separate bedroom, private lounge.</p>
+                            <br>
+                            <div class="detail-room">
+                                <p>Beds: <span style="color:cadetblue ;">Triple</span></p>
+                                <p >Occuppation: <span style="color:cadetblue ;">3</span></p>
+                                <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
+                                <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
+                            </div>
+                            <span class="price">1500MDH</span>
+                            <span class="actual-price">2500MDH</span>
                         </div>
-                        <div class="group-form">
-                            <input type="password" name="Password" id="" minlength="8" required>
-                            <span>Password</span>
+                        <div class="single-room">
+                            <div class="room-image">
+                                <span class="discount-tag"> 0% off</span>
+                                <img src="images/singleRoom.jpg" alt="" class="royal-suite">
+                            </div>
+                            <h2 class="product-brand">Single Room</h2>
+                            <p class="room-desc">Covering an area of ​​approximately 25m², the rooms have either a "pool" view or a "garden".</p>
+                            <br>
+                            <div class="detail-room">
+                                <p>Beds: <span style="color:cadetblue ;">1</span></p>
+                                <p >Occuppation: <span style="color:cadetblue ;">1</span></p>
+                                <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
+                                <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
+                            </div>
+                            <span class="price">500MDH</span>
+                            <span class="actual-price">0000MDH</span>
                         </div>
-                        <div class="group-form">
-                            <input type="password" name="PasswordConfirm" id="" required>
-                            <span>Confirm Password</span>
+                        <!-- double-room -->
+                        <div class="double-room">
+                            <div class="room-image">
+                                <span class="discount-tag">25% off</span>
+                                <img src="images/doubleRoom.jpg" alt="" class="royal-suite">
+                            </div>
+                            <h2 class="product-brand">Double Room</h2>
+                            <p class="room-desc">Covering an area of ​​approximately 25m², the rooms have either a "pool" view or a "garden".</p>
+                            <br>
+                            <div class="detail-room">
+                                <p>Beds: <span style="color:cadetblue ;">2</span></p>
+                                <p >Occuppation: <span style="color:cadetblue ;">2</span></p>
+                                <p >Children (0 to 11 yo): <span style="color:cadetblue;">1</span></p>
+                                <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
+                            </div>
+                            <span class="price">1000MDH</span>
+                            <span class="actual-price">1500MDH</span>
                         </div>
-                        <div class="liens">
-                            <a href="#" onclick="openboxLogin()">Already have account</a>
+                        <!-- triple-room -->
+                        <div class="triple-room">
+                            <div class="room-image">
+                                <span class="discount-tag">15% off</span>
+                                <img src="images/tripleRoom.jpg" alt="" class="royal-suite">
+                            </div>
+                            <h2 class="product-brand">Triple Room</h2>
+                            <p class="room-desc">Covering an area of ​​approximately 25m², the rooms have either a "pool" view or a "garden".</p>
+                            <br>
+                            <div class="detail-room">
+                                <p>Beds: <span style="color:cadetblue ;">3</span></p>
+                                <p >Occuppation: <span style="color:cadetblue ;">3</span></p>
+                                <p >Children (0 to 11 yo): <span style="color:cadetblue;">2</span></p>
+                                <p >Vu: <span style="color:cadetblue ;">piscine Montagne</span></p>
+                            </div>
+                            <span class="price">1200MDH</span>
+                            <span class="actual-price">1500MDH</span>
                         </div>
-                        <div class="group-form">
-                            <input type="submit" name="" id="" value="Connect">
-                        </div>
-                        
-                    </form>
-                </div>
-                <div class="boxLogin" id="box-login">
-                    <div class="headForm">
-                        <ul>
-                            <li>
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round" onclick="closeboxLogin()">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <line x1="18" y1="6" x2="6" y2="18" />
-                                    <line x1="6" y1="6" x2="18" y2="18" />
-                                </svg>
-                                <span>Login</span>
-                            </li>
-                        </ul>
                     </div>
-                    <form action="script_login.php" method="post">
-                        <div class="group-form">
-                            <input type="email" name="emailLogin" id="" required>
-                            <span>Email</span>
+                    <div class="book-room">
+                        <a href="#form-of-booking" class="test"><input type="button" value="Book Now"  class="book-now"></a>
+                        <a href="#top" class="top-icon"><img src="images/top.png" alt="" ></a>
+                    </div>
+                </div>
+                
+                    
+                
+
+                <!-- booking form -->
+                <div id="form-of-booking" style="height:30px"></div>
+                <div id="booking-form">
+                    <form action="booking" method="get">
+                        <div>
+                            <label for="">First name :</label>
+                            <input type="text" name="Prenom" required>
                         </div>
-                        <div class="group-form">
-                            <input type="Password" name="passLogin" id="" required>
-                            <span>Password</span>
+                        <div>
+                            <label for="">Last name :</label>
+                            <input type="text" name="Nom" required>
                         </div>
-                        <div class="liens">
-                            <a href="#">Forgot Password</a>
-                            <a href="#" onclick="openboxSignIn()">Create account</a>
+                        <div>
+                            <label for="">CIN : </label>
+                            <input type="text" name="cin" required>
                         </div>
-                        <div class="group-form">
-                            <input type="submit" name="submit" id="" value="Login">
+                        <div>
+                            <label for="">Phone Number : </label>
+                            <input type="tel" name="PhoneNumber" required>
+                        </div>
+                        <div>
+                            <label for="">Email : </label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="booking-options">Type of Booking: </label>
+                            <select name="type" id="booking-options">
+                                <option value="RoyalSuite">Royal Suite</option>
+                                <option value="JuniorSuite">Junior Suite</option>
+                                <option value="SingleRoom">Single Room</option>
+                                <option value="DoucleRoom">Double Room</option>
+                                <option value="TripleRoom">TripleRoom</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Start Date : </label>
+                            <input type="date" name="DateDebut" required>
+                        </div>
+                        <div>
+                            <label for="">Final Date : </label>
+                            <input type="date" name="DateFin" required>
+                        </div>
+                        <div>
+                            <textarea name="message" id="" cols="50" rows="6" placeholder="Additional notes"></textarea>
+                        </div>
+                        <div class="book-button">
+                            <input type="submit" value="Confirm">
                         </div>
                     </form>
                 </div>
-            
-        </section> -->
-        <!-- ************************ -->
-        <!-- booking form -->
-        <div id="form-of-booking" style="height:30px"></div>
-        <div id="booking-form">
-            <form action="" method="">
-                 <div>
-                    <label for="">First name :</label>
-                    <input type="text" required>
-                 </div>
-                 <div>
-                    <label for="">Last name :</label>
-                    <input type="text" required>
-                 </div>
-                 <div>
-                    <label for="">CIN : </label>
-                    <input type="text" required>
-                 </div>
-                 <div>
-                    <label for="">Phone Number : </label>
-                    <input type="tel" required>
-                 </div>
-                 <div>
-                    <label for="">Email : </label>
-                    <input type="email" required>
-                 </div>
-                 <div>
-                    <label for="booking-options">Type of Booking: </label>
-                    <select name="" id="booking-options">
-                        <option value="RoyalSuite">Royal Suite</option>
-                        <option value="JuniorSuite">Junior Suite</option>
-                        <option value="SingleRoom">Single Room</option>
-                        <option value="DoucleRoom">Double Room</option>
-                        <option value="TripleRoom">TripleRoom</option>
-                    </select>
-                 </div>
-                 <div>
-                    <label for="">Start Date : </label>
-                    <input type="date" required>
-                 </div>
-                 <div>
-                    <label for="">Final Date : </label>
-                    <input type="date">
-                 </div>
-                 <div>
-                    <textarea name="" id="" cols="50" rows="6" placeholder="Additional notes"></textarea>
-                 </div>
-                 <div class="book-button">
-                    <input type="submit" value="Confirm">
-                 </div>
-            </form>
+                <!-- footer -->
+                <footer>
+                    <div class="FooterInfos">
+                        <div class="FooterInfosBox Box1">
+                            <div class="FooterInfosBoxTitle">
+                                <span>Contact Us</span>
+                            </div>
+                            <div class="FooterInfosBoxLien ListLien1">
+                                <ul>
+                                    <li><a href="">HotelBM@gmail.com</a></li>
+                                    <li><a href="">+212 620-429392</a></li>
+                                    <li><a href="">+212 622-538418</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="FooterInfosLigne"></div>
+                        <div class="FooterInfosBox Box2">
+                            <div class="FooterInfosBoxTitle">
+                                <span>Take a visit</span>
+                            </div>
+                            <div class="FooterInfosBoxLien ListLien2">
+                                <ul>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                                        <circle cx="12" cy="12" r="3" />
+                                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                                    </svg><span>Instagram</span></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                    </svg><span>Facebook</span></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <rect x="3" y="5" width="18" height="14" rx="4" />
+                                        <path d="M10 9l5 3l-5 3z" />
+                                    </svg><span>Youtube</span></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                        <line x1="8" y1="11" x2="8" y2="16" />
+                                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                                        <line x1="12" y1="16" x2="12" y2="11" />
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                    </svg><span>Linked in</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="FooterInfosLigne"></div>
+                        <div class="FooterInfosBox Box3">
+                            <div class="FooterInfosBoxTitle">
+                                <span>Booking</span>
+                            </div>
+                            <div class="FooterInfosBoxLien">
+                                <ul>
+                                    <li><a href="Booking.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <line x1="17" y1="7" x2="7" y2="17" />
+                                        <polyline points="8 7 17 7 17 16" />
+                                    </svg><span>Reserve Here</span></a></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FooterLogo"><span>Hotel</span></div>
+                    <div class="FooterLigne"></div>
+                    <div class="FooterCopyrights">
+                        <div>
+                            <span>&copy;Copyright 2022 - Béni Mellal Hotel - All Rights are Reserved</span>
+                        </div>
+                        <div>
+                            <span>&copy;Copyright 2022 - Béni Mellal Hotel - Created with 💛 by Bouyzem Younes & Alahyane YouSsef</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
-        <!-- footer -->
-        <footer>
-            <div class="FooterInfos">
-                <div class="FooterInfosBox Box1">
-                    <div class="FooterInfosBoxTitle">
-                        <span>Contact Us</span>
-                    </div>
-                    <div class="FooterInfosBoxLien ListLien1">
-                        <ul>
-                            <li><a href="">HotelBM@gmail.com</a></li>
-                            <li><a href="">+212 620-429392</a></li>
-                            <li><a href="">+212 622-538418</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="FooterInfosLigne"></div>
-                <div class="FooterInfosBox Box2">
-                    <div class="FooterInfosBoxTitle">
-                        <span>Take a visit</span>
-                    </div>
-                    <div class="FooterInfosBoxLien ListLien2">
-                        <ul>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <rect x="4" y="4" width="16" height="16" rx="4" />
-                                <circle cx="12" cy="12" r="3" />
-                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                              </svg><span>Instagram</span></a></li>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                              </svg><span>Facebook</span></a></li>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <rect x="3" y="5" width="18" height="14" rx="4" />
-                                <path d="M10 9l5 3l-5 3z" />
-                              </svg><span>Youtube</span></a></li>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <rect x="4" y="4" width="16" height="16" rx="2" />
-                                <line x1="8" y1="11" x2="8" y2="16" />
-                                <line x1="8" y1="8" x2="8" y2="8.01" />
-                                <line x1="12" y1="16" x2="12" y2="11" />
-                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                              </svg><span>Linked in</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="FooterInfosLigne"></div>
-                <div class="FooterInfosBox Box3">
-                    <div class="FooterInfosBoxTitle">
-                        <span>Booking</span>
-                    </div>
-                    <div class="FooterInfosBoxLien">
-                        <ul>
-                            <li><a href="Booking.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <line x1="17" y1="7" x2="7" y2="17" />
-                                <polyline points="8 7 17 7 17 16" />
-                              </svg><span>Reserve Here</span></a></li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="FooterLogo"><span>Hotel</span></div>
-            <div class="FooterLigne"></div>
-            <div class="FooterCopyrights">
-                <div>
-                    <span>&copy;Copyright 2022 - Béni Mellal Hotel - All Rights are Reserved</span>
-                </div>
-                <div>
-                    <span>&copy;Copyright 2022 - Béni Mellal Hotel - Created with 💛 by Bouyzem Younes & Alahyane YouSsef</span>
-                </div>
-            </div>
-        </footer>
-    </div>
         <!-- footer -->
       
 
