@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #252525;
+}
+
+.ReceptionPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ReceptionPage .Logo{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.ReceptionPage .Formulaire{
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 8px aliceblue;
+}
+
+
+.ReceptionPage .Formulaire .head span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #252525;
+}
+
+.ReceptionPage .Formulaire form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.ReceptionPage .Formulaire form .group-form{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ReceptionPage .Formulaire form .group-form label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #252525;
+}
+
+.ReceptionPage .Formulaire form table th{
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #252525;
+    background-color: dodgerblue;
+}
+
+.ReceptionPage .Formulaire form table td{
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color: #252525;
+    background-color: #fff;
+}
+
+.ReceptionPage .Formulaire form .group-form input[type="number"]{
+    width: 30rem;
+    padding: .8rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #252525;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.ReceptionPage .Formulaire form .group-form input[type="submit"]{
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #252525;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.ReceptionPage .Formulaire form .group-form a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.ReceptionPage .Formulaire form .group-form a:hover,
+.ReceptionPage .Formulaire form .group-form input[type="submit"]:hover{
+    opacity: .8;
+}
+
+.ReceptionPage .Formulaire form .group-form a:nth-child(1){
+    background-color: dodgerblue;
+}
+
+.ReceptionPage .Formulaire form .group-form a:nth-child(2){
+    background-color: gold;
+}
+
+.ReceptionPage .Formulaire form .group-form a:nth-child(3){
+    background-color: red;
+}
+
+
+/* ***************************************** */
+    /* AJOUT + Modifie + Supprime PAGE */
+/* ***************************************** */
+
+.AjoutPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.AjoutPage .Logo{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.AjoutPage .Formulaire{
+    width: 40%;
+    height: 95%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 8px aliceblue;
+}
+
+
+.AjoutPage .Formulaire .head span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.AjoutPage .Formulaire form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AjoutPage .Formulaire form .group-form{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.AjoutPage .Formulaire form .group-form label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #252525;
+}
+
+.AjoutPage .Formulaire form table th{
+    padding: 1rem 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #252525;
+    background-color: dodgerblue;
+}
+
+.AjoutPage .Formulaire form table td{
+    padding: 1rem 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color: #252525;
+    background-color: #fff;
+}
+
+.AjoutPage .Formulaire form .group-form input[type="text"],
+.AjoutPage .Formulaire form .group-form input[type="number"],
+.AjoutPage .Formulaire form .group-form select,
+.AjoutPage .Formulaire form .group-form input[type="date"]{
+    width: 15rem;
+    padding: .5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #252525;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9rem;
+    outline: none;
+}
+
+.AjoutPage .Formulaire form .group-form input[type="submit"],
+.AjoutPage .Formulaire form .group-form input[type="reset"]{
+    background-color: transparent;
+    border: none;
+    background-color: #252525;
+    border-radius: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem 3rem;
+    padding: 1rem 1.3rem;
+    transition: .3s;
+}
+
+.AjoutPage .Formulaire form .group-form input[type="submit"]:hover,
+.AjoutPage .Formulaire form .group-form input[type="reset"]:hover{
+    opacity: .8;
+}
+
+/* ***************************************** */
+    /* AJOUT + Modifie + Supprime PAGE */
+/* ***************************************** */
+
+.SupprimePage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.SupprimePage .Logo{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.SupprimePage .Formulaire{
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 8px aliceblue;
+}
+
+
+.SupprimePage .Formulaire .head span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #252525;
+}
+
+.SupprimePage .Formulaire form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.SupprimePage .Formulaire form .group-form{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.SupprimePage .Formulaire form .group-form label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #252525;
+}
+
+.SupprimePage .Formulaire form table th{
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #252525;
+    background-color: dodgerblue;
+}
+
+.SupprimePage .Formulaire form table td{
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color: #252525;
+    background-color: #fff;
+}
+
+.SupprimePage .Formulaire form .group-form input[type="number"]{
+    width: 30rem;
+    padding: .8rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #252525;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.SupprimePage .Formulaire form .group-form input[type="submit"],
+.SupprimePage .Formulaire form .group-form input[type="reset"]{
+    padding: 1.2rem 2rem;
+    background-color: transparent;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #252525;
+    border-radius: 50px;
+    cursor: pointer;
+}
+

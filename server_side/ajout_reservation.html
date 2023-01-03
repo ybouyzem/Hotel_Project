@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout d'un reservation | Béni Mellal Hotel</title>
+    <link rel="stylesheet" href="reception.css">
+</head>
+<body>
+    <div class="AjoutPage">
+        <div class="Logo">
+            <a href="administration.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="3" y1="21" x2="21" y2="21" />
+                    <path d="M5 21v-14l8 -4v18" />
+                    <path d="M19 21v-10l-6 -4" />
+                    <line x1="9" y1="9" x2="9" y2="9.01" />
+                    <line x1="9" y1="12" x2="9" y2="12.01" />
+                    <line x1="9" y1="15" x2="9" y2="15.01" />
+                    <line x1="9" y1="18" x2="9" y2="18.01" />
+                  </svg>
+            </a>
+        </div>
+        <div class="Formulaire">
+            <div class="head">
+                <span>Ajout d'un reservation</span>
+            </div>
+            <form action="">
+                <div class="group-form">
+                    <label for=""><span style="color: red">*</span>Num de reservation: </label>
+                    <input type="number" required>
+                </div>
+                <div class="group-form">
+                    <label for="">Prenom: </label>
+                    <input type="text" name="Prenom" required>
+                </div>
+                <div class="group-form">
+                    <label for="">Nom: </label>
+                    <input type="text" name="Nom" required>
+                </div>
+                <div class="group-form">
+                    <label for="">CIN: </label>
+                    <input type="text" name="cin" required>
+                </div>
+                <div class="group-form">
+                    <label for="">Type de reservation: </label>
+                    <select name="" id="" required>
+                        <option value="null" disabled selected>Type</option>
+                        <option value="RoyalSuite">Royal Suite</option>
+                        <option value="JuniorSuite">Junior Suite</option>
+                        <option value="SingleRoom">Single Room</option>
+                        <option value="DoucleRoom">Double Room</option>
+                        <option value="TripleRoom">TripleRoom</option>
+                    </select>
+                </div>
+                <div class="group-form">
+                    <label for="">Date de debut: </label>
+                    <input type="date" required>
+                </div>
+                <div class="group-form">
+                    <label for="">Date de fin: </label>
+                    <input type="date">
+                </div>
+                <div class="group-form">
+                    <input type="submit" name="" id="" value="Executer">
+                    <input type="reset" name="" id="" value="Annuler">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
