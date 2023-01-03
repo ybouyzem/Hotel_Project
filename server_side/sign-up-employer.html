@@ -6,44 +6,41 @@
     </head>
     <body>
         <div class="title">
-            Ajouter un employé
+            Add an Employer
         </div>
         <section>
             
-            <form action="" method="">
+            <form action="" method="post">
             
                 <div>
-                    <label for="">Nom : </label>
-                    <input type="text" required>
+                    <label for="">First name : </label>
+                    <input type="text" name="first_name_emp" required>
                 </div>
                 <div>
-                    <label for="">Prenom : </label>
-                    <input type="text" required>
+                    <label for="">Last name : </label>
+                    <input type="text" name="last_name_emp" required>
                 </div>
                 <div>
-                    <label for="">CNE : </label>
-                    <input type="text">
+                    <label for="">CIN : </label>
+                    <input type="text" name="CIN" required>
                 </div>
                 <div>
-                    <label for="">Date de naissance : </label>
-                    <input type="date" required>
+                    <label for="">Birthday : </label>
+                    <input type="date" mame="birthday_emp" required>
                 </div>
                 <div>
-                    <label for="">Numero telephone : </label>
-                    <input type="tel" required>
+                    <label for="">Phone number : </label>
+                    <input type="tel" name="tel_emp" required>
                 </div>
                 <div>
-                    <label for="">Email personnelle : </label>
-                    <input type="email" required>
+                    <label for="">Email  : </label>
+                    <input type="email" name="email_emp" required>
                 </div>
+            
                 <div>
-                    <label for="">Email d'Hotel : </label>
-                    <input type="email" required>
-                </div>
-                <div>
-                    <label for="">Nom du poste : </label>
-                    <select name="" id="" required>
-                        <option value="">Assistant du Directeur General</option>
+                    <label for="">Post Name : </label>
+                    <select name="post_name" id="post_name" required>
+                        <option value="" selected>Assistant du Directeur General</option>
                         <option value="">Directeur Comercial</option>
                         <option value="">Assistant du Directeur Comercial</option>
                         <option value="">Chef Reception</option>                         
@@ -53,23 +50,23 @@
                     </select>
                 </div>
                 <div>
-                    <label for="">ID_Poste : </label>
-                    <select name="" id="" disabled>
-                        <option value="">ASSIS_DIR_G</option>
-                        <option value="">DIR_COM</option>
-                        <option value="">ASSIS_DIR_COM</option>
-                        <option value="">CHEF_REC</option>
-                        <option value="">ASSIS_CHEF_REC</option>
-                        <option value="">DIR_ALI_BOI</option>
-                        <option value="">DIR_LOGISTIQUE</option>
+                    <label for="">Post ID : </label>
+                    <select name="post_id" id="post_id" disabled>
+                        <option value="ASSIS_DIR_G" selected>ASSIS_DIR_G</option>
+                        <option value="DIR_COM">DIR_COM</option>
+                        <option value="ASSIS_DIR_COM">ASSIS_DIR_COM</option>
+                        <option value="CHEF_REC">CHEF_REC</option>
+                        <option value="ASSIS_CHEF_REC">ASSIS_CHEF_REC</option>
+                        <option value="DIR_ALI_BOI">DIR_ALI_BOI</option>
+                        <option value="DIR_LOGISTIQUE">DIR_LOGISTIQUE</option>
                     </select>
                 </div>
                 <div>
-                    <label for="">Nouvel Mot de Passe : </label>
+                    <label for="">New Password: </label>
                     <input type="text" required>
                 </div>
                 <div>
-                    <label for="">Confirmer ce Mot de Passe : </label>
+                    <label for="">Confirm your Password : </label>
                     <input type="password" required>
                 </div>
                 <div>
@@ -77,11 +74,17 @@
                     <input type="date">
                 </div>
                 <div class="buttons">
-                    <input type="submit" value="Ajouter">
-                    <input type="reset" value="Réinitialiser">
+                    <input type="submit" value="Add">
+                    <input type="reset" value="Reset">
                 </div>
                 <div>
             </form>
         </div>
     </section>
+    <script>
+        document.getElementById('post_name').onchange=function(){
+            postName=document.getElementById('post_name').selectedIndex;
+        document.getElementById('post_id').selectedIndex=postName;
+        }
+    </script>
 </html>
