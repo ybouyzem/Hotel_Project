@@ -2071,3 +2071,153 @@ footer.CallServiceFooter{
     color: #fff;
     
 }
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Receipt browser */
+
+.ReceiptBrowser{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ReceiptBrowser .Form1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Form1 */
+
+.ReceiptBrowser .Form1 .Mini1Form1{
+    display: flex;
+    flex-direction: column;
+}
+
+.ReceiptBrowser .Form1 .Mini1Form1 .head span{
+    font-family: Cairo;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.ReceiptBrowser .Form1 .Mini1Form1 .body .miniBody{
+    text-align: center;
+}
+
+.ReceiptBrowser .Form1 .Mini1Form1 .body span{
+    font-family: Cairo;
+    font-size: 1rem;
+}
+
+
+.ReceiptBrowser .Form1 .Mini1Form1 .body .miniHead{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.ReceiptBrowser .Form1 .Mini2Form1{
+    display: flex;
+    flex-direction: column;
+}
+
+.ReceiptBrowser .Form1 .Mini2Form1 .head1{
+    display: flex;
+    align-items: center;
+}
+
+.ReceiptBrowser .Form1 .Mini2Form1 .head1 span{
+    font-family: Disney;
+    font-size: 3rem;
+}
+
+.ReceiptBrowser .Form1 .Mini2Form1 .miniBody{
+    text-align: center;
+}
+
+.ReceiptBrowser .Form1 .Mini2Form1 .body span{
+    font-family: Cairo;
+}
+
+.ReceiptBrowser .Form1 .Mini2Form1 .body .miniHead span{
+    font-family: Cairo;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Form2 */
+
+.ReceiptBrowser .Form2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ReceiptBrowser .Form2 table{
+    width: 80%;
+    text-align: center;
+}
+
+.ReceiptBrowser .Form2 table th,
+.ReceiptBrowser .Form2 table td{
+    height: 3rem;
+}
+
+.ReceiptBrowser .Form2 table th{
+    font-family: Cairo;
+    background-color: dodgerblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ReceiptBrowser .Form2 table td{
+    background-color: #3e0028;
+    color: #fff;
+    font-family: Cairo;
+}
+
+
+/* From3 */
+
+
+.ReceiptBrowser .Form3{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.ReceiptBrowser .Form3 .Mini1Form3 span{
+    font-family: Cairo;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3e0028;
+}
+
+.ReceiptBrowser .Form3 .Mini2Form3 .miniBody span{
+    font-family: Cairo;
+}
+
+.ReceiptBrowser .Form3 .Mini2Form3 .miniBody .miniHead{
+    font-family: Cairo;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+.ReceiptBrowser .Form3 .Mini2Form3 .line{
+    width: 10rem;
+    border-top: 1px solid #000;
+    margin: 0.5rem 0;
+}
