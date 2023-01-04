@@ -2028,3 +2028,46 @@ footer.CallServiceFooter{
     color:rgb(28, 151, 145);
 }
 /* ======= */
+
+
+/* ***********************************
+***********************************
+*********************************** */
+
+/* Result browser */
+
+.ResultPage{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/low-poly-grid-haikei.png");
+    background-position: center;
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ResultPage .Form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ResultPage .Form .Head span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ResultPage .Form .Para span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
