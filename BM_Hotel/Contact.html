@@ -121,7 +121,7 @@
                             </li>
                         </ul>
                     </div>
-                    <form action="register" method="post">
+                    <form id="form" action="register" method="post" onsubmit="return verifForm(this)">
                         <div class="Name">
                             <div class="group-form">
                                 <input type="text" name="FirstName_register" id="" required>
@@ -138,18 +138,18 @@
                             <span>Email</span>
                         </div>
                         <div class="group-form">
-                            <input type="password" name="Password_register" id="" minlength="8" required>
+                            <input type="password" name="Password_register" id="pwd" onblur="validePwd(this)" minlength="8" required>
                             <span>Password</span>
                         </div>
                         <div class="group-form">
-                            <input type="password" name="PasswordConfirm_register" id="" required>
+                            <input type="password" name="PasswordConfirm_register" id="cpwd" onblur="valideCPwd(this)" required>
                             <span>Confirm Password</span>
                         </div>
                         <div class="liens">
                             <a href="#" onclick="openboxLogin()">Already have account</a>
                         </div>
                         <div class="group-form">
-                            <input type="submit" name="" id="" value="Connect">
+                            <input type="submit" name="" id="" value="Connect" onclick="Send()">
                         </div>
                         
                     </form>
@@ -310,5 +310,6 @@
         <script src="pop-up.js"></script>
         <script src="show_menu_up.js"></script>
         <script src="langContact.js"></script>
+        <script src="TestingPwd.js"></script>
     </body>
 </html>
