@@ -12,12 +12,15 @@ create table reservation (
 	start_date date,
 	final_date date
 );
+
 create table client ( 
 	id_client int(100) primary key auto_INCREMENT,
-	id_res int(100), cin varchar(100),
+	id_res int(100), 
+	cin varchar(100),
 	foreign key (id_client) references person(id_per),
 	foreign key (id_res) references reservation(id_res)
 );
+
 create table employee( 
     id_emp int not null primary key AUTO_INCREMENT, 
     lastName_emp varchar(50), 
@@ -26,8 +29,13 @@ create table employee(
     birthday_emp date, 
     phoneNumber_emp int, 
     email_emp varchar(50), 
-    post_id_emp varchar(25), 
-    pwd_emp varchar(50), 
     hireJob date, 
     salary float
     );
+	
+create table administrators ( 
+	admin_id int primary key not null auto_INCREMENT, 
+	post_id varchar(25), 
+	pwd varchar(50), 
+	foreign key (admin_id) references employee(id_emp)
+);
