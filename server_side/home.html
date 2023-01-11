@@ -8,24 +8,24 @@
         <section class="container">
             <div class="title">Just for administrators</div>
             <div class="login">
-                <form action="" method="post">
+                <form action="Login" method="post" id="form" onsubmit="return verifForm(this)">
                     <div class="title">Sign in</div>
                     <div class="Hotel-Email">
                         <label for="">Hotel Email</label>
                         <br>
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" onblur="valideEmail(this)" id="email" required>
                     </div>
                     <div class="job">
                         <label for="">ID poste</label>
                         <br>
-                        <input type="text" name="post_id" required>
+                        <input type="text" name="post_id" onblur="validePostId(this)" id="post_id" required>
                     </div>
                     <div class="password">
                         <label for="">Password</label>
                         <br>
-                        <input type="password" name="pwd" required>
+                        <input type="password" name="pwd" onblur="validePwd(this)" id="pwd" required>
                     </div>
-                    <div class="forgetpass">If you forget your password please call your director!</div>
+                    <div class="forgetpass">If you forget your password please contact with your director!</div>
                     <div class="button">
                         <button type="submit">Sign in</button>
                     </div>
@@ -35,4 +35,5 @@
             
         </section>
     </body>
+    <script src="SignIn.js"></script>
 </html>
