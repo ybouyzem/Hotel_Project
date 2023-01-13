@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajout d'un reservation | Béni Mellal Hotel</title>
     <link rel="stylesheet" href="reception.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="AjoutPage">
@@ -27,11 +28,7 @@
             <div class="head">
                 <span>Ajout d'un reservation</span>
             </div>
-            <form action="">
-                <div class="group-form">
-                    <label for=""><span style="color: red">*</span>Num de reservation: </label>
-                    <input type="number" required>
-                </div>
+            <form action="AjoutRes" method="post">
                 <div class="group-form">
                     <label for="">Prenom: </label>
                     <input type="text" name="Prenom" required>
@@ -46,7 +43,7 @@
                 </div>
                 <div class="group-form">
                     <label for="">Type de reservation: </label>
-                    <select name="" id="" required>
+                    <select name="TypeRes" id="" required>
                         <option value="null" disabled selected>Type</option>
                         <option value="RoyalSuite">Royal Suite</option>
                         <option value="JuniorSuite">Junior Suite</option>
@@ -57,11 +54,11 @@
                 </div>
                 <div class="group-form">
                     <label for="">Date de debut: </label>
-                    <input type="date" required>
+                    <input type="date" name="dateDebut" required>
                 </div>
                 <div class="group-form">
                     <label for="">Date de fin: </label>
-                    <input type="date">
+                    <input type="date" name="dateFin">
                 </div>
                 <div class="group-form">
                     <input type="submit" name="" id="" value="Executer">

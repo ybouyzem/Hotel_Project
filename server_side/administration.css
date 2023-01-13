@@ -46,12 +46,12 @@ header nav ul li a:hover {
 
 @font-face {
     font-family: Disney;
-    src: url(../BM_Hotel/fonts/NewWaltDisneyUi-8YdA.ttf);
+    src: url(fonts/NewWaltDisneyUi-8YdA.ttf);
 }
 
 @font-face {
     font-family: Cairo;
-    src: url(../BM_Hotel/fonts/Cairo-VariableFont_wght.ttf);
+    src: url(fonts/Cairo-VariableFont_wght.ttf);
 }
 
 /* Global */

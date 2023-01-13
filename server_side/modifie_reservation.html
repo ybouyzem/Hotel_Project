@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifie d'un reservation | Béni Mellal Hotel</title>
     <link rel="stylesheet" href="reception.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="AjoutPage">
@@ -27,41 +28,41 @@
             <div class="head">
                 <span>Modifie d'un reservation</span>
             </div>
-            <form action="">
+            <form action="ModifieRes" method="post">
                 <div class="group-form">
                     <label for=""><span style="color: red">*</span>Num de reservation: </label>
-                    <input type="number" required>
+                    <input type="number" name="numRes" required>
                 </div>
                 <div class="group-form">
                     <label for="">Prenom(Nouveau):</label>
-                    <input type="text" name="Prenom" >
+                    <input type="text" name="prenom" required>
                 </div>
                 <div class="group-form">
                     <label for="">Nom(Nouveau):</label>
-                    <input type="text" name="Nom" >
+                    <input type="text" name="nom" required>
                 </div>
                 <div class="group-form">
                     <label for="">CIN(Nouveau): </label>
-                    <input type="text" name="cin" >
+                    <input type="text" name="cin" required>
                 </div>
                 <div class="group-form">
                     <label for="">Type de reservation(Nouveau): </label>
-                    <select name="" id="" >
+                    <select name="type" id="" required>
                         <option value="null" disabled selected>Type</option>
                         <option value="RoyalSuite">Royal Suite</option>
                         <option value="JuniorSuite">Junior Suite</option>
                         <option value="SingleRoom">Single Room</option>
-                        <option value="DoucleRoom">Double Room</option>
+                        <option value="DoubleRoom">Double Room</option>
                         <option value="TripleRoom">TripleRoom</option>
                     </select>
                 </div>
                 <div class="group-form">
                     <label for="">Date de debut(Nouveau): </label>
-                    <input type="date">
+                    <input type="date" name="dateD" required>
                 </div>
                 <div class="group-form">
                     <label for="">Date de fin(Nouveau): </label>
-                    <input type="date">
+                    <input type="date" name="dateF">
                 </div>
                 <div class="group-form">
                     <input type="submit" name="" id="" value="Executer">
