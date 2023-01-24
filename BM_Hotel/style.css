@@ -2135,9 +2135,10 @@ footer.CallServiceFooter{
     align-items: center;
 }
 
-.ReceiptBrowser .Form1 .Mini2Form1 .head1 span{
+.ReceiptBrowser .Form1 .Mini2Form1 .head1 a span{
     font-family: Disney;
     font-size: 3rem;
+    color: #000;
 }
 
 .ReceiptBrowser .Form1 .Mini2Form1 .miniBody{
